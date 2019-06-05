@@ -19,27 +19,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f4d-dB-pai" userLabel="DisplayStack">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zzW-01-z2g" userLabel="InspectionMap">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fme-zQ-hqp" userLabel="LogoView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="E5l-aY-YWD"/>
-                                        </constraints>
-                                    </imageView>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="98T-DV-fiy" userLabel="InspectionMap">
-                                        <rect key="frame" x="0.0" y="75" width="414" height="777"/>
-                                    </mapView>
-                                </subviews>
-                            </stackView>
+                            </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="inb-nc-ufL" userLabel="LogoView">
+                                <rect key="frame" x="132" y="44" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="gdT-ff-50u"/>
+                                    <constraint firstAttribute="width" constant="150" id="inZ-eq-Eso"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="f4d-dB-pai" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2OY-5s-j7X"/>
-                            <constraint firstItem="f4d-dB-pai" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KXa-8V-sEd"/>
-                            <constraint firstItem="f4d-dB-pai" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LBY-H2-Gx9"/>
-                            <constraint firstAttribute="bottom" secondItem="f4d-dB-pai" secondAttribute="bottom" id="whp-D9-5zP"/>
+                            <constraint firstItem="zzW-01-z2g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1cg-ZL-vEV"/>
+                            <constraint firstAttribute="bottom" secondItem="zzW-01-z2g" secondAttribute="bottom" id="VhI-hy-5s5"/>
+                            <constraint firstItem="zzW-01-z2g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aBd-nY-a1Y"/>
+                            <constraint firstItem="inb-nc-ufL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="igK-65-HZd"/>
+                            <constraint firstItem="zzW-01-z2g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jvw-Iv-brG"/>
+                            <constraint firstItem="inb-nc-ufL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ngK-fP-CGs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
