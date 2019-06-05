@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6708819822A76E0A0012DD3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708819722A76E0A0012DD3D /* AppDelegate.swift */; };
+		6708819A22A76E0A0012DD3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708819922A76E0A0012DD3D /* ViewController.swift */; };
+		6708819D22A76E0A0012DD3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6708819B22A76E0A0012DD3D /* Main.storyboard */; };
+		670881A022A76E0A0012DD3D /* dinesmart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6708819E22A76E0A0012DD3D /* dinesmart.xcdatamodeld */; };
+		670881A222A76E0B0012DD3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670881A122A76E0B0012DD3D /* Assets.xcassets */; };
+		670881A522A76E0B0012DD3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670881A322A76E0B0012DD3D /* LaunchScreen.storyboard */; };
+		670881B022A76E0B0012DD3D /* dinesmartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670881AF22A76E0B0012DD3D /* dinesmartTests.swift */; };
+		670881BB22A76E0B0012DD3D /* dinesmartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670881BA22A76E0B0012DD3D /* dinesmartUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		670881AC22A76E0B0012DD3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6708818C22A76E0A0012DD3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6708819322A76E0A0012DD3D;
+			remoteInfo = dinesmart;
+		};
+		670881B722A76E0B0012DD3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6708818C22A76E0A0012DD3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6708819322A76E0A0012DD3D;
+			remoteInfo = dinesmart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6708819422A76E0A0012DD3D /* dinesmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dinesmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6708819722A76E0A0012DD3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6708819922A76E0A0012DD3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6708819C22A76E0A0012DD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6708819F22A76E0A0012DD3D /* dinesmart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dinesmart.xcdatamodel; sourceTree = "<group>"; };
+		670881A122A76E0B0012DD3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		670881A422A76E0B0012DD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		670881A622A76E0B0012DD3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		670881AB22A76E0B0012DD3D /* dinesmartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dinesmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		670881AF22A76E0B0012DD3D /* dinesmartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dinesmartTests.swift; sourceTree = "<group>"; };
+		670881B122A76E0B0012DD3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		670881B622A76E0B0012DD3D /* dinesmartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dinesmartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		670881BA22A76E0B0012DD3D /* dinesmartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dinesmartUITests.swift; sourceTree = "<group>"; };
+		670881BC22A76E0B0012DD3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6708819122A76E0A0012DD3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		670881A822A76E0B0012DD3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		670881B322A76E0B0012DD3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6708818B22A76E0A0012DD3D = {
+			isa = PBXGroup;
+			children = (
+				6708819622A76E0A0012DD3D /* dinesmart */,
+				670881AE22A76E0B0012DD3D /* dinesmartTests */,
+				670881B922A76E0B0012DD3D /* dinesmartUITests */,
+				6708819522A76E0A0012DD3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6708819522A76E0A0012DD3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6708819422A76E0A0012DD3D /* dinesmart.app */,
+				670881AB22A76E0B0012DD3D /* dinesmartTests.xctest */,
+				670881B622A76E0B0012DD3D /* dinesmartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6708819622A76E0A0012DD3D /* dinesmart */ = {
+			isa = PBXGroup;
+			children = (
+				6708819722A76E0A0012DD3D /* AppDelegate.swift */,
+				6708819922A76E0A0012DD3D /* ViewController.swift */,
+				6708819B22A76E0A0012DD3D /* Main.storyboard */,
+				670881A122A76E0B0012DD3D /* Assets.xcassets */,
+				670881A322A76E0B0012DD3D /* LaunchScreen.storyboard */,
+				670881A622A76E0B0012DD3D /* Info.plist */,
+				6708819E22A76E0A0012DD3D /* dinesmart.xcdatamodeld */,
+			);
+			path = dinesmart;
+			sourceTree = "<group>";
+		};
+		670881AE22A76E0B0012DD3D /* dinesmartTests */ = {
+			isa = PBXGroup;
+			children = (
+				670881AF22A76E0B0012DD3D /* dinesmartTests.swift */,
+				670881B122A76E0B0012DD3D /* Info.plist */,
+			);
+			path = dinesmartTests;
+			sourceTree = "<group>";
+		};
+		670881B922A76E0B0012DD3D /* dinesmartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				670881BA22A76E0B0012DD3D /* dinesmartUITests.swift */,
+				670881BC22A76E0B0012DD3D /* Info.plist */,
+			);
+			path = dinesmartUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6708819322A76E0A0012DD3D /* dinesmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 670881BF22A76E0B0012DD3D /* Build configuration list for PBXNativeTarget "dinesmart" */;
+			buildPhases = (
+				6708819022A76E0A0012DD3D /* Sources */,
+				6708819122A76E0A0012DD3D /* Frameworks */,
+				6708819222A76E0A0012DD3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dinesmart;
+			productName = dinesmart;
+			productReference = 6708819422A76E0A0012DD3D /* dinesmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		670881AA22A76E0B0012DD3D /* dinesmartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 670881C222A76E0B0012DD3D /* Build configuration list for PBXNativeTarget "dinesmartTests" */;
+			buildPhases = (
+				670881A722A76E0B0012DD3D /* Sources */,
+				670881A822A76E0B0012DD3D /* Frameworks */,
+				670881A922A76E0B0012DD3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				670881AD22A76E0B0012DD3D /* PBXTargetDependency */,
+			);
+			name = dinesmartTests;
+			productName = dinesmartTests;
+			productReference = 670881AB22A76E0B0012DD3D /* dinesmartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		670881B522A76E0B0012DD3D /* dinesmartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 670881C522A76E0B0012DD3D /* Build configuration list for PBXNativeTarget "dinesmartUITests" */;
+			buildPhases = (
+				670881B222A76E0B0012DD3D /* Sources */,
+				670881B322A76E0B0012DD3D /* Frameworks */,
+				670881B422A76E0B0012DD3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				670881B822A76E0B0012DD3D /* PBXTargetDependency */,
+			);
+			name = dinesmartUITests;
+			productName = dinesmartUITests;
+			productReference = 670881B622A76E0B0012DD3D /* dinesmartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6708818C22A76E0A0012DD3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Codeovo Software Ltd";
+				TargetAttributes = {
+					6708819322A76E0A0012DD3D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					670881AA22A76E0B0012DD3D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6708819322A76E0A0012DD3D;
+					};
+					670881B522A76E0B0012DD3D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6708819322A76E0A0012DD3D;
+					};
+				};
+			};
+			buildConfigurationList = 6708818F22A76E0A0012DD3D /* Build configuration list for PBXProject "dinesmart" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6708818B22A76E0A0012DD3D;
+			productRefGroup = 6708819522A76E0A0012DD3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6708819322A76E0A0012DD3D /* dinesmart */,
+				670881AA22A76E0B0012DD3D /* dinesmartTests */,
+				670881B522A76E0B0012DD3D /* dinesmartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6708819222A76E0A0012DD3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670881A522A76E0B0012DD3D /* LaunchScreen.storyboard in Resources */,
+				670881A222A76E0B0012DD3D /* Assets.xcassets in Resources */,
+				6708819D22A76E0A0012DD3D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		670881A922A76E0B0012DD3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		670881B422A76E0B0012DD3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6708819022A76E0A0012DD3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670881A022A76E0A0012DD3D /* dinesmart.xcdatamodeld in Sources */,
+				6708819A22A76E0A0012DD3D /* ViewController.swift in Sources */,
+				6708819822A76E0A0012DD3D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		670881A722A76E0B0012DD3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670881B022A76E0B0012DD3D /* dinesmartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		670881B222A76E0B0012DD3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670881BB22A76E0B0012DD3D /* dinesmartUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		670881AD22A76E0B0012DD3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6708819322A76E0A0012DD3D /* dinesmart */;
+			targetProxy = 670881AC22A76E0B0012DD3D /* PBXContainerItemProxy */;
+		};
+		670881B822A76E0B0012DD3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6708819322A76E0A0012DD3D /* dinesmart */;
+			targetProxy = 670881B722A76E0B0012DD3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6708819B22A76E0A0012DD3D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6708819C22A76E0A0012DD3D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		670881A322A76E0B0012DD3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				670881A422A76E0B0012DD3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		670881BD22A76E0B0012DD3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		670881BE22A76E0B0012DD3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		670881C022A76E0B0012DD3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SF5C5UFLDD;
+				INFOPLIST_FILE = dinesmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeovo.dinesmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		670881C122A76E0B0012DD3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SF5C5UFLDD;
+				INFOPLIST_FILE = dinesmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeovo.dinesmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		670881C322A76E0B0012DD3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SF5C5UFLDD;
+				INFOPLIST_FILE = dinesmartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeovo.dinesmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dinesmart.app/dinesmart";
+			};
+			name = Debug;
+		};
+		670881C422A76E0B0012DD3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SF5C5UFLDD;
+				INFOPLIST_FILE = dinesmartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeovo.dinesmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dinesmart.app/dinesmart";
+			};
+			name = Release;
+		};
+		670881C622A76E0B0012DD3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SF5C5UFLDD;
+				INFOPLIST_FILE = dinesmartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeovo.dinesmartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = dinesmart;
+			};
+			name = Debug;
+		};
+		670881C722A76E0B0012DD3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SF5C5UFLDD;
+				INFOPLIST_FILE = dinesmartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeovo.dinesmartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = dinesmart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6708818F22A76E0A0012DD3D /* Build configuration list for PBXProject "dinesmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670881BD22A76E0B0012DD3D /* Debug */,
+				670881BE22A76E0B0012DD3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		670881BF22A76E0B0012DD3D /* Build configuration list for PBXNativeTarget "dinesmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670881C022A76E0B0012DD3D /* Debug */,
+				670881C122A76E0B0012DD3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		670881C222A76E0B0012DD3D /* Build configuration list for PBXNativeTarget "dinesmartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670881C322A76E0B0012DD3D /* Debug */,
+				670881C422A76E0B0012DD3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		670881C522A76E0B0012DD3D /* Build configuration list for PBXNativeTarget "dinesmartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670881C622A76E0B0012DD3D /* Debug */,
+				670881C722A76E0B0012DD3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6708819E22A76E0A0012DD3D /* dinesmart.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6708819F22A76E0A0012DD3D /* dinesmart.xcdatamodel */,
+			);
+			currentVersion = 6708819F22A76E0A0012DD3D /* dinesmart.xcdatamodel */;
+			path = dinesmart.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6708818C22A76E0A0012DD3D /* Project object */;
+}
