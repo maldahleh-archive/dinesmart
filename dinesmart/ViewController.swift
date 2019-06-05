@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  dinesmart
+//  DineSmart
 //
 //  Created by Mohammed Al-Dahleh on 2019-06-04.
 //  Copyright © 2019 Codeovo Software Ltd. All rights reserved.

@@ -99,11 +99,10 @@
 		6708819622A76E0A0012DD3D /* dinesmart */ = {
 			isa = PBXGroup;
 			children = (
+				670881C822A81B200012DD3D /* Storyboards */,
 				6708819722A76E0A0012DD3D /* AppDelegate.swift */,
 				6708819922A76E0A0012DD3D /* ViewController.swift */,
-				6708819B22A76E0A0012DD3D /* Main.storyboard */,
 				670881A122A76E0B0012DD3D /* Assets.xcassets */,
-				670881A322A76E0B0012DD3D /* LaunchScreen.storyboard */,
 				670881A622A76E0B0012DD3D /* Info.plist */,
 				6708819E22A76E0A0012DD3D /* dinesmart.xcdatamodeld */,
 			);
@@ -126,6 +125,15 @@
 				670881BC22A76E0B0012DD3D /* Info.plist */,
 			);
 			path = dinesmartUITests;
+			sourceTree = "<group>";
+		};
+		670881C822A81B200012DD3D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6708819B22A76E0A0012DD3D /* Main.storyboard */,
+				670881A322A76E0B0012DD3D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
