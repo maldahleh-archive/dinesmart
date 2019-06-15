@@ -62,6 +62,6 @@ extension APIClient {
                     completion(.failure(.jsonConversionFailure))
                 }
             }
-            }.resume()
+        }.resume()
     }
 }

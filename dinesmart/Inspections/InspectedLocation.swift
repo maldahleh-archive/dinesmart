@@ -13,6 +13,7 @@ struct InspectedLocation: Decodable {
     let name: String
     let type: String
     let address: String
+    let coords: Coordinate
     let minInspections: String
     
     let inspections: [Inspection]

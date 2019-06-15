@@ -14,7 +14,7 @@ enum Inspections {
 
 extension Inspections: Endpoint {
     var base: String {
-        return "https://shrouded-meadow-40073.herokuapp.com"
+        return "https://infinite-stream-30246.herokuapp.com"
     }
     
     var path: String {
