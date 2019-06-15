@@ -25,6 +25,7 @@
 		670881DE22A83C8F0012DD3D /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670881DD22A83C8F0012DD3D /* Coordinate.swift */; };
 		670881E122A83CCC0012DD3D /* Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670881E022A83CCC0012DD3D /* Inspection.swift */; };
 		670881E422A83D000012DD3D /* Infraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670881E322A83D000012DD3D /* Infraction.swift */; };
+		67AB782122B4A62900C8F5C2 /* MKMapView+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB782022B4A62900C8F5C2 /* MKMapView+Center.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		670881DD22A83C8F0012DD3D /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		670881E022A83CCC0012DD3D /* Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspection.swift; sourceTree = "<group>"; };
 		670881E322A83D000012DD3D /* Infraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infraction.swift; sourceTree = "<group>"; };
+		67AB782022B4A62900C8F5C2 /* MKMapView+Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Center.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				670881C922A835D10012DD3D /* Networking */,
 				670881D922A83A840012DD3D /* Inspections */,
 				670881C822A81B200012DD3D /* Storyboards */,
+				67AB781F22B4A60C00C8F5C2 /* Extensions */,
 				6708819722A76E0A0012DD3D /* AppDelegate.swift */,
 				6708819922A76E0A0012DD3D /* ViewController.swift */,
 				670881A122A76E0B0012DD3D /* Assets.xcassets */,
@@ -228,6 +231,14 @@
 				670881E322A83D000012DD3D /* Infraction.swift */,
 			);
 			path = Infraction;
+			sourceTree = "<group>";
+		};
+		67AB781F22B4A60C00C8F5C2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67AB782022B4A62900C8F5C2 /* MKMapView+Center.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +376,7 @@
 				670881D322A836750012DD3D /* Endpoint.swift in Sources */,
 				670881D022A836540012DD3D /* Result.swift in Sources */,
 				670881DB22A83BD90012DD3D /* InspectedLocation.swift in Sources */,
+				67AB782122B4A62900C8F5C2 /* MKMapView+Center.swift in Sources */,
 				670881A022A76E0A0012DD3D /* dinesmart.xcdatamodeld in Sources */,
 				6708819A22A76E0A0012DD3D /* ViewController.swift in Sources */,
 				670881DE22A83C8F0012DD3D /* Coordinate.swift in Sources */,

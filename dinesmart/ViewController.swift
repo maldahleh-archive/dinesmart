@@ -14,8 +14,16 @@ class ViewController: UIViewController {
     
     let client = InspectionClient()
     
+    private struct Constants {
+        static let LATITUDE = 43.8563
+        static let LONGITUDE = -79.5085
+        static let DELTA = 0.7
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        inspectionMapView.centerOn(Constants.LATITUDE, Constants.LONGITUDE, withDelta: Constants.DELTA)
         
         // TODO: WIP
         client.inspections { [weak self] result in
