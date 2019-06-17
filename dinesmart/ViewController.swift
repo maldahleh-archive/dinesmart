@@ -15,18 +15,13 @@ class ViewController: UIViewController {
     
     let client = InspectionClient()
     let clusteringManager = ClusteringManager()
-    
-    private struct Constants {
-        static let LATITUDE = 43.8563
-        static let LONGITUDE = -79.5085
-        static let DELTA = 0.7
-    }
+    let inspectionDictionary = InspectionDictionary()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         inspectionMapView.delegate = self
-        inspectionMapView.centerOn(Constants.LATITUDE, Constants.LONGITUDE, withDelta: Constants.DELTA)
+        inspectionMapView.center()
         
         // TODO: WIP
         client.inspections { [weak self] result in
@@ -38,14 +33,11 @@ class ViewController: UIViewController {
                 
                 var annotations: [MKAnnotation] = []
                 for inspection in inspections {
-                    guard let coordinate = inspection.coords.asCLLocationCoordinate() else {
+                    guard let annotation = inspection.asMKAnnotation() else {
                         continue
                     }
                     
-                    let annotation = MKPointAnnotation()
-                    annotation.title = inspection.name
-                    annotation.subtitle = inspection.address
-                    annotation.coordinate = coordinate
+                    self.inspectionDictionary.insert(annotation.coordinate.latitude, annotation.coordinate.longitude, value: inspection)
                     annotations.append(annotation)
                 }
                 
@@ -59,10 +51,18 @@ class ViewController: UIViewController {
 }
 
 // MARK: - MKMapViewDelegate
-
 extension ViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         clusteringManager.renderAnnotations(onMapView: inspectionMapView)
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        guard let annotation = view.annotation,
+            let locations = inspectionDictionary.locationsAt(annotation.coordinate.latitude, annotation.coordinate.longitude) else {
+            return
+        }
+        
+        print(locations)
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

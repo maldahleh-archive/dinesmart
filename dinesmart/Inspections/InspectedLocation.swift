@@ -6,7 +6,7 @@
 //  Copyright © 2019 Codeovo Software Ltd. All rights reserved.
 //
 
-import Foundation
+import MapKit
 
 struct InspectedLocation: Decodable {
     let id: String
@@ -15,6 +15,22 @@ struct InspectedLocation: Decodable {
     let address: String
     let coords: Coordinate
     let minInspections: String
+    let dataSource: String
     
     let inspections: [Inspection]
+}
+
+// MARK: - Mapping
+extension InspectedLocation {
+    func asMKAnnotation() -> MKAnnotation? {
+        guard let coordinate = coords.asCLLocationCoordinate() else {
+            return nil
+        }
+        
+        let annotation = MKPointAnnotation()
+        annotation.title = name
+        annotation.subtitle = address
+        annotation.coordinate = coordinate
+        return annotation
+    }
 }
