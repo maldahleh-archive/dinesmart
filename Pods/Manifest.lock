@@ -1,0 +1,16 @@
+PODS:
+  - PinFloyd (1.0.4)
+
+DEPENDENCIES:
+  - PinFloyd
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PinFloyd
+
+SPEC CHECKSUMS:
+  PinFloyd: 066497f0c753fb6afec6d8ea4b454908494322e4
+
+PODFILE CHECKSUM: e11ea4247b36cdb3be096a595ecd8c2c5b8767dd
+
+COCOAPODS: 1.7.0
