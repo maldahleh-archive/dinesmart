@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="height" constant="40" id="dcD-u6-nNm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="TextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -68,6 +68,9 @@
         <image name="Logo" width="2037" height="1377"/>
         <namedColor name="BackgroundColor">
             <color red="0.99607843137254903" green="0.9882352941176471" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.86274509803921573" green="0.30980392156862746" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
