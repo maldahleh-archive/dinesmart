@@ -47,8 +47,8 @@ class ViewController: UIViewController {
                 
                 self.clusteringManager.add(annotations: annotations)
                 self.clusteringManager.renderAnnotations(onMapView: self.inspectionMapView)
-            case .failure(let error):
-                print(error)
+            case .failure:
+                self.presentAlertWith(message: "API Request Failed")
             }
         }
     }
