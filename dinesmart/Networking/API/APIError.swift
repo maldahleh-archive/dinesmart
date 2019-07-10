@@ -6,7 +6,7 @@
 //  Copyright © 2019 Codeovo Software Ltd. All rights reserved.
 //
 
-enum APIError: Error, CustomStringConvertible {
+enum APIError: Error {
     case requestFailed
     case invalidData
     case responseUnsuccessful

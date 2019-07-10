@@ -35,17 +35,15 @@ class ViewController: UIViewController {
             
             switch result {
             case .success(let inspections):
-                var annotations: [MKAnnotation] = []
-                for inspection in inspections {
+                self.clusteringManager.add(annotations: inspections.compactMap { inspection in
                     guard let annotation = inspection.asMKAnnotation() else {
-                        continue
+                        return nil
                     }
                     
                     self.inspectionDictionary.insert(annotation.coordinate.latitude, annotation.coordinate.longitude, value: inspection)
-                    annotations.append(annotation)
-                }
+                    return annotation
+                })
                 
-                self.clusteringManager.add(annotations: annotations)
                 self.clusteringManager.renderAnnotations(onMapView: self.inspectionMapView)
             case .failure:
                 self.presentAlertWith(message: "API Request Failed")
