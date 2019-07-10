@@ -29,20 +29,34 @@
                                     <constraint firstAttribute="width" constant="150" id="inZ-eq-Eso"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Data..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dq1-qK-keo" userLabel="LoadingLabel">
+                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dcD-u6-nNm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zzW-01-z2g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1cg-ZL-vEV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dq1-qK-keo" secondAttribute="trailing" id="GWw-2I-5Qv"/>
+                            <constraint firstItem="Dq1-qK-keo" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Icr-wS-7gF"/>
                             <constraint firstAttribute="bottom" secondItem="zzW-01-z2g" secondAttribute="bottom" id="VhI-hy-5s5"/>
                             <constraint firstItem="zzW-01-z2g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aBd-nY-a1Y"/>
                             <constraint firstItem="inb-nc-ufL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="igK-65-HZd"/>
                             <constraint firstItem="zzW-01-z2g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jvw-Iv-brG"/>
                             <constraint firstItem="inb-nc-ufL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ngK-fP-CGs"/>
+                            <constraint firstItem="Dq1-qK-keo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wVt-b0-J3r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="inspectionMapView" destination="zzW-01-z2g" id="yVb-Rn-32O"/>
+                        <outlet property="loadingLabel" destination="Dq1-qK-keo" id="CLV-fm-509"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -12,6 +12,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var inspectionMapView: MKMapView!
+    @IBOutlet weak var loadingLabel: UILabel!
     
     let client = InspectionClient()
     let clusteringManager = ClusteringManager()
@@ -19,18 +20,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setInteractionAllowed(to: false)
         
         inspectionMapView.delegate = self
         inspectionMapView.center()
         
         // TODO: WIP
         client.inspections { [weak self] result in
+            guard let self = self else {
+                return
+            }
+            
+            self.setInteractionAllowed(to: true)
+            
             switch result {
             case .success(let inspections):
-                guard let self = self else {
-                    return
-                }
-                
                 var annotations: [MKAnnotation] = []
                 for inspection in inspections {
                     guard let annotation = inspection.asMKAnnotation() else {
@@ -47,6 +51,11 @@ class ViewController: UIViewController {
                 print(error)
             }
         }
+    }
+    
+    func setInteractionAllowed(to allowed: Bool) {
+        inspectionMapView.isUserInteractionEnabled = allowed
+        loadingLabel.isHidden = allowed
     }
 }
 
