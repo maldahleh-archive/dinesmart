@@ -137,8 +137,9 @@ public final class ClusteringManager {
 
           let annotation = ClusterAnnotation(
             coordinate: clusterMapPoint.coordinate,
-            annotationsCount: annotations.count
+            heldAnnotations: annotations
           )
+            
           clusteredAnnotations.append(annotation)
         }
       }

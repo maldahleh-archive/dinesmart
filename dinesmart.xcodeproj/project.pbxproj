@@ -81,6 +81,7 @@
 		671D810F22D6762700121E1B /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		67AB782022B4A62900C8F5C2 /* MKMapView+Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Center.swift"; sourceTree = "<group>"; };
 		67DF0C0522B7289900AF7DFF /* InspectionDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionDictionary.swift; sourceTree = "<group>"; };
+		67FE043122D6E46400155DA6 /* PinFloyd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PinFloyd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B94CE0F6D72E31F7888CC1 /* Pods-dinesmartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinesmartTests.debug.xcconfig"; path = "Target Support Files/Pods-dinesmartTests/Pods-dinesmartTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A2488401B8EC01D1E8D6791 /* Pods_dinesmartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dinesmartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D106778D768E8927F089774 /* Pods-dinesmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinesmart.debug.xcconfig"; path = "Target Support Files/Pods-dinesmart/Pods-dinesmart.debug.xcconfig"; sourceTree = "<group>"; };
@@ -288,6 +289,7 @@
 		F16704A693942AD7E2680057 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67FE043122D6E46400155DA6 /* PinFloyd.framework */,
 				B7540A30F98FDE035D69F48A /* Pods_dinesmart.framework */,
 				0EBD339DF2AB48DD9BD6F3C5 /* Pods_dinesmartTests.framework */,
 				7A2488401B8EC01D1E8D6791 /* Pods_dinesmartUITests.framework */,

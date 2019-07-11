@@ -3,50 +3,50 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1081396548E2E92B1AB08492667928BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D890BC086331CFA5853025C62B1CD9 /* Foundation.framework */; };
-		1E3A8ECE3018B07CD7A330385EFECCF9 /* PinFloyd-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B55341F42B0C68410F6EAB2C9816C16 /* PinFloyd-dummy.m */; };
-		245797623BC10AA596AEF2C0D9D8C5CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D890BC086331CFA5853025C62B1CD9 /* Foundation.framework */; };
-		3A1C07C2C12569D98CCD5AB46315DE06 /* AnnotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6424C259A120F532945F954F2752FFB /* AnnotationAnimation.swift */; };
-		44359272D7C845DF65BC0A63B5457406 /* ClusterPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C696AD383E1D0552A26B88DA1416CCA /* ClusterPin.swift */; };
-		4AB7BC8618AD43829C0907B337DC14ED /* Pods-dinesmart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 851128DCB814F2396EC0F81B019176DD /* Pods-dinesmart-dummy.m */; };
-		50D5F362DDDDC1BEB44A949C2C2D3F79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D890BC086331CFA5853025C62B1CD9 /* Foundation.framework */; };
-		51DC6DCF570C7E1AA7F7BAEB100820AB /* Pods-dinesmartTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A29EB9BA87CAE14B2BFDBA86B6B2BE3C /* Pods-dinesmartTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		584808E8851E526E278B368CA8705C02 /* PinFloyd-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF52BE84F581D3C6142C2D595E4912A /* PinFloyd-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		611E417F1D75A194967B1A6BCCFC3F2C /* ClusterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FE6CCA8DDCE5EACD231E2D5509A13 /* ClusterAnnotation.swift */; };
-		6AD6C0E917EE486E7D31346EE3192C24 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463EDB7D7C34B483552ABC921A26BE3 /* MapKit.framework */; };
-		6D3B496655E3ED225E2EDF1A286BD103 /* Pods-dinesmart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B78B1B9B607858DCF84E62B4EC94DD6 /* Pods-dinesmart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73817284A65B596A3BDCFD1D8D1C52BE /* Pods-dinesmartUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 747AFB0E19474404CCCCCDC0EC5BBE09 /* Pods-dinesmartUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		854C17FA8C751050D8DD2FEE7F756AB5 /* Pods-dinesmartUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC59911D6599AB6AA9251179D195F967 /* Pods-dinesmartUITests-dummy.m */; };
-		8A2BFF483CBF1447F0FB0DD56C7DC9B7 /* QuadTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D91F1770AC4611902A9F14675A239 /* QuadTreeNode.swift */; };
-		95B2B4B362295FF745B651075B7C1FDB /* MKMapView+PinFloyd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C919740CF418361C327388A3D6631D0 /* MKMapView+PinFloyd.swift */; };
-		96BCBE498A571CDE7644557AEDEF95CA /* Pods-dinesmartTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBA5AB3896F35457DF1DB13883A7B11 /* Pods-dinesmartTests-dummy.m */; };
-		BC5436CEF98B3AEB936A79861101199A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B31A15AEF545E8EBA9DB87FB9D5747D /* UIKit.framework */; };
-		C12A04C1FF4D661A2FAA304DD6CBBC45 /* ClusteringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150643E797A16F016A0E6FF3D7B31CB /* ClusteringManager.swift */; };
-		D585365BA321DC0614B6412881F56D9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D890BC086331CFA5853025C62B1CD9 /* Foundation.framework */; };
-		ED694B20339E7CAF618C063FB1269C43 /* ClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB285BB61246657D0D531422C49D076 /* ClusterAnnotationView.swift */; };
-		F490D318C2F853B4A3BDA7C60BFDE98C /* MKGeometry+PinFloyd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2EAD0246DEEF49A0E8E9C52A5BA5D /* MKGeometry+PinFloyd.swift */; };
+		00C7DEF33FF20447DC4D07444BBF8789 /* AnnotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6424C259A120F532945F954F2752FFB /* AnnotationAnimation.swift */; };
+		07529FD4D046E26AF619E7119ACC1479 /* ClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB285BB61246657D0D531422C49D076 /* ClusterAnnotationView.swift */; };
+		2B925B5343567A10739AB81AC1ED7E05 /* ClusterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FE6CCA8DDCE5EACD231E2D5509A13 /* ClusterAnnotation.swift */; };
+		3B5326E2A52CB7FC47D630E2C9911C8E /* ClusterPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C696AD383E1D0552A26B88DA1416CCA /* ClusterPin.swift */; };
+		4302197DF2267C4D5BA41E9C40F5EC52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D890BC086331CFA5853025C62B1CD9 /* Foundation.framework */; };
+		47D7918E2B2A4D108AD6ED8133CDECD6 /* Pods-dinesmartTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBA5AB3896F35457DF1DB13883A7B11 /* Pods-dinesmartTests-dummy.m */; };
+		600027BD03F99EE63349768CE1E35B88 /* Pods-dinesmartUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC59911D6599AB6AA9251179D195F967 /* Pods-dinesmartUITests-dummy.m */; };
+		64A8E9DA618876E97F127116FBFF819B /* MKGeometry+PinFloyd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2EAD0246DEEF49A0E8E9C52A5BA5D /* MKGeometry+PinFloyd.swift */; };
+		6F7707DE48952084B2513B97543C915F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B31A15AEF545E8EBA9DB87FB9D5747D /* UIKit.framework */; };
+		72935B0E90236456FB92D756C5EF5D19 /* Pods-dinesmartUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 747AFB0E19474404CCCCCDC0EC5BBE09 /* Pods-dinesmartUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77C3246D8C0E815C5BF28DEB51D405A1 /* PinFloyd-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF52BE84F581D3C6142C2D595E4912A /* PinFloyd-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C768621EEB82CDDA06A028D661674B7 /* QuadTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D91F1770AC4611902A9F14675A239 /* QuadTreeNode.swift */; };
+		7D56BE02A0B04504D5953AE9BEC66900 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463EDB7D7C34B483552ABC921A26BE3 /* MapKit.framework */; };
+		8511D18360CA496862FEE8FBE87F35AC /* Pods-dinesmart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 851128DCB814F2396EC0F81B019176DD /* Pods-dinesmart-dummy.m */; };
+		8D480E56DBF4045991F2723FF9C5314B /* Pods-dinesmartTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A29EB9BA87CAE14B2BFDBA86B6B2BE3C /* Pods-dinesmartTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A352826CB57C092B5AF3727844CBEB76 /* Pods-dinesmart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B78B1B9B607858DCF84E62B4EC94DD6 /* Pods-dinesmart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACA2A49F2311FA37F5507D140A6078C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D890BC086331CFA5853025C62B1CD9 /* Foundation.framework */; };
+		B07ECEB46BD02F97E7DE4667258F0F78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D890BC086331CFA5853025C62B1CD9 /* Foundation.framework */; };
+		B2A07A2E7B755F095F68911615401032 /* PinFloyd-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B55341F42B0C68410F6EAB2C9816C16 /* PinFloyd-dummy.m */; };
+		B61B321816DA0B5042507D8C68ED4990 /* ClusteringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150643E797A16F016A0E6FF3D7B31CB /* ClusteringManager.swift */; };
+		BF01BD6631C4E62562C99FCA52AF25DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D890BC086331CFA5853025C62B1CD9 /* Foundation.framework */; };
+		FEA8C4B5C93C0D261F4497C3A795A2F2 /* MKMapView+PinFloyd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C919740CF418361C327388A3D6631D0 /* MKMapView+PinFloyd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		56D98A274D03AA8223688BD51D8B9764 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53527431A8C68AB8E88032CC5B66F70D;
-			remoteInfo = "Pods-dinesmart";
-		};
-		7F6A78DA9220BCA7DC1318FCDBA55E88 /* PBXContainerItemProxy */ = {
+		318AA091FD9CFA26C95C7A9757AC784E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 44CD1AB64F5D883ACF13DB70D819DF23;
 			remoteInfo = PinFloyd;
 		};
-		914F1289284E92D638B87BED747DD983 /* PBXContainerItemProxy */ = {
+		3B2CCFF4B913F8DF2917790633C32403 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53527431A8C68AB8E88032CC5B66F70D;
+			remoteInfo = "Pods-dinesmart";
+		};
+		BDE58805A2C04403E0DFAE9462C92884 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -56,14 +56,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0350EE6D592F6CA80AE3A9B67E3C685D /* PinFloyd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PinFloyd.framework; path = PinFloyd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		049FE6CCA8DDCE5EACD231E2D5509A13 /* ClusterAnnotation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClusterAnnotation.swift; path = Sources/ClusterAnnotation.swift; sourceTree = "<group>"; };
 		0C919740CF418361C327388A3D6631D0 /* MKMapView+PinFloyd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MKMapView+PinFloyd.swift"; path = "Sources/Extensions/MKMapView+PinFloyd.swift"; sourceTree = "<group>"; };
-		0F77F2D37AFABD86558091D05CFE4B9C /* Pods_dinesmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_dinesmart.framework; path = "Pods-dinesmart.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		136FFDE16A51B5A9535D2C1BB34EB638 /* PinFloyd.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinFloyd.xcconfig; sourceTree = "<group>"; };
 		137AA038650E9EA1109F6F99A82DFFFF /* PinFloyd.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PinFloyd.modulemap; sourceTree = "<group>"; };
 		1A74D430471545784D64B9CFCFD0EFBF /* Pods-dinesmartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dinesmartTests.release.xcconfig"; sourceTree = "<group>"; };
 		2C989F247862E641DC1247E4DAB8E7D3 /* Pods-dinesmartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dinesmartUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2CB285BB61246657D0D531422C49D076 /* ClusterAnnotationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClusterAnnotationView.swift; path = Sources/ClusterAnnotationView.swift; sourceTree = "<group>"; };
+		3D8E6E7C8CAA4B3BD33582F3EF85AA32 /* Pods_dinesmartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_dinesmartTests.framework; path = "Pods-dinesmartTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D2EAD0246DEEF49A0E8E9C52A5BA5D /* MKGeometry+PinFloyd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MKGeometry+PinFloyd.swift"; path = "Sources/Extensions/MKGeometry+PinFloyd.swift"; sourceTree = "<group>"; };
 		4E3B7A214F62272FBE8FD05BB634A935 /* Pods-dinesmartUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-dinesmartUITests.modulemap"; sourceTree = "<group>"; };
 		52D890BC086331CFA5853025C62B1CD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -88,55 +89,54 @@
 		A29EB9BA87CAE14B2BFDBA86B6B2BE3C /* Pods-dinesmartTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-dinesmartTests-umbrella.h"; sourceTree = "<group>"; };
 		AC59911D6599AB6AA9251179D195F967 /* Pods-dinesmartUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dinesmartUITests-dummy.m"; sourceTree = "<group>"; };
 		B5D75413FE28DCFD5DD59C213DBBB36D /* Pods-dinesmartTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dinesmartTests-Info.plist"; sourceTree = "<group>"; };
-		B73C731FDD07DF8D82C214B8595BB0A9 /* Pods_dinesmartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_dinesmartTests.framework; path = "Pods-dinesmartTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B779CBD03E779C102A89AD2EBE8C3079 /* Pods-dinesmartTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-dinesmartTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B7DCF3FBE15CC95D9B026312841EE36C /* Pods-dinesmartUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dinesmartUITests-Info.plist"; sourceTree = "<group>"; };
 		BBF5689FBD94F1A4A41813D6F3DF1611 /* Pods-dinesmart-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-dinesmart-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BFF52BE84F581D3C6142C2D595E4912A /* PinFloyd-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinFloyd-umbrella.h"; sourceTree = "<group>"; };
 		CBE3C9F3F89EA9DF682713B09B1374F7 /* PinFloyd-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinFloyd-prefix.pch"; sourceTree = "<group>"; };
-		CD963C619CFF061286286471A9E53D15 /* Pods_dinesmartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_dinesmartUITests.framework; path = "Pods-dinesmartUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B3A711D5A143CC6668AA65EA6C7BBC /* Pods_dinesmartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_dinesmartUITests.framework; path = "Pods-dinesmartUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D150643E797A16F016A0E6FF3D7B31CB /* ClusteringManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClusteringManager.swift; path = Sources/ClusteringManager.swift; sourceTree = "<group>"; };
 		D525C0CE9EDE9ACE36C0CA40F6D252EB /* Pods-dinesmart-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-dinesmart-frameworks.sh"; sourceTree = "<group>"; };
 		D6424C259A120F532945F954F2752FFB /* AnnotationAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnnotationAnimation.swift; path = Sources/AnnotationAnimation.swift; sourceTree = "<group>"; };
 		DE1B39DED80AA945B2C68AD88E685009 /* Pods-dinesmartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dinesmartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E5EFD4B89CDCC36325603E00941CDCDD /* Pods-dinesmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dinesmart.release.xcconfig"; sourceTree = "<group>"; };
 		E7EE924383A3DDBB6C3953B2B27D1778 /* Pods-dinesmart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-dinesmart.modulemap"; sourceTree = "<group>"; };
+		F2CDF4ECC0C1266D049BB5A5A6F79FE8 /* Pods_dinesmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_dinesmart.framework; path = "Pods-dinesmart.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BC6EBAB13F4C4520D0CDF74760E95B /* Pods-dinesmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dinesmart.debug.xcconfig"; sourceTree = "<group>"; };
-		FA314C0FC03F17F10E0BD9DB1F8C2FD6 /* PinFloyd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PinFloyd.framework; path = PinFloyd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		016EEDA68DD7C461E722237B3EA895ED /* Frameworks */ = {
+		2500F68AE9E2D045712A91A5AF24B79F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				245797623BC10AA596AEF2C0D9D8C5CD /* Foundation.framework in Frameworks */,
-				6AD6C0E917EE486E7D31346EE3192C24 /* MapKit.framework in Frameworks */,
-				BC5436CEF98B3AEB936A79861101199A /* UIKit.framework in Frameworks */,
+				ACA2A49F2311FA37F5507D140A6078C2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		26680B1AAA7EE264960C30EB593CACAC /* Frameworks */ = {
+		A5C4EBF6378A1430BBDBDE43485C5ECD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1081396548E2E92B1AB08492667928BC /* Foundation.framework in Frameworks */,
+				B07ECEB46BD02F97E7DE4667258F0F78 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BD0AFA206120E982ABF7235877E1801 /* Frameworks */ = {
+		C3B372AE6D7692DCC326213BE17DA021 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50D5F362DDDDC1BEB44A949C2C2D3F79 /* Foundation.framework in Frameworks */,
+				BF01BD6631C4E62562C99FCA52AF25DB /* Foundation.framework in Frameworks */,
+				7D56BE02A0B04504D5953AE9BEC66900 /* MapKit.framework in Frameworks */,
+				6F7707DE48952084B2513B97543C915F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4686A06EC7D2382BEE0D13F1C18E7D4C /* Frameworks */ = {
+		CB97D16F48CC50C42E4642B0D6B41E8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D585365BA321DC0614B6412881F56D9D /* Foundation.framework in Frameworks */,
+				4302197DF2267C4D5BA41E9C40F5EC52 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,10 +204,10 @@
 		6015570C968355614A6C08E5F9A16B51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA314C0FC03F17F10E0BD9DB1F8C2FD6 /* PinFloyd.framework */,
-				0F77F2D37AFABD86558091D05CFE4B9C /* Pods_dinesmart.framework */,
-				B73C731FDD07DF8D82C214B8595BB0A9 /* Pods_dinesmartTests.framework */,
-				CD963C619CFF061286286471A9E53D15 /* Pods_dinesmartUITests.framework */,
+				0350EE6D592F6CA80AE3A9B67E3C685D /* PinFloyd.framework */,
+				F2CDF4ECC0C1266D049BB5A5A6F79FE8 /* Pods_dinesmart.framework */,
+				3D8E6E7C8CAA4B3BD33582F3EF85AA32 /* Pods_dinesmartTests.framework */,
+				D0B3A711D5A143CC6668AA65EA6C7BBC /* Pods_dinesmartUITests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -284,35 +284,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		03374AAA74C021F1987913BE5E4736A2 /* Headers */ = {
+		373E89CA1E1D407CEE3295C50820FD7B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73817284A65B596A3BDCFD1D8D1C52BE /* Pods-dinesmartUITests-umbrella.h in Headers */,
+				72935B0E90236456FB92D756C5EF5D19 /* Pods-dinesmartUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		03E76CC05B77EDF0F7A36AF3D4C3B98E /* Headers */ = {
+		646D9D078583ED88B7678212A151C510 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D3B496655E3ED225E2EDF1A286BD103 /* Pods-dinesmart-umbrella.h in Headers */,
+				77C3246D8C0E815C5BF28DEB51D405A1 /* PinFloyd-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3DC09B434B4EBAF753732BC5F94A3B4D /* Headers */ = {
+		AD3562F219136009994952B91CDF5AC3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51DC6DCF570C7E1AA7F7BAEB100820AB /* Pods-dinesmartTests-umbrella.h in Headers */,
+				A352826CB57C092B5AF3727844CBEB76 /* Pods-dinesmart-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF068BB57DAA7DC9BAC0BB65439B9E57 /* Headers */ = {
+		B17DC059C780BC4118693B4713E5DAC7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				584808E8851E526E278B368CA8705C02 /* PinFloyd-umbrella.h in Headers */,
+				8D480E56DBF4045991F2723FF9C5314B /* Pods-dinesmartTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,31 +321,31 @@
 /* Begin PBXNativeTarget section */
 		33CBAAA75B07844F20121C16FE4E5A3A /* Pods-dinesmartTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57C58E69C9E4EB32588923E1F6F99D49 /* Build configuration list for PBXNativeTarget "Pods-dinesmartTests" */;
+			buildConfigurationList = EFD934749A74E3FA65D2D411B45C2DB3 /* Build configuration list for PBXNativeTarget "Pods-dinesmartTests" */;
 			buildPhases = (
-				3DC09B434B4EBAF753732BC5F94A3B4D /* Headers */,
-				C9B9E6DE0E95B72D8AC5B2D6D84E3290 /* Sources */,
-				3BD0AFA206120E982ABF7235877E1801 /* Frameworks */,
-				58EA305AD317EEC216A8C0200F017E01 /* Resources */,
+				B17DC059C780BC4118693B4713E5DAC7 /* Headers */,
+				DCBBA01F909B44193B41C0413D600E0C /* Sources */,
+				CB97D16F48CC50C42E4642B0D6B41E8B /* Frameworks */,
+				26A450B7463631749C480F236091C7A9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				33A8DCBE9A691D16612743462492D66C /* PBXTargetDependency */,
+				E31896D4CF389C247F3F17221D9E2470 /* PBXTargetDependency */,
 			);
 			name = "Pods-dinesmartTests";
 			productName = "Pods-dinesmartTests";
-			productReference = B73C731FDD07DF8D82C214B8595BB0A9 /* Pods_dinesmartTests.framework */;
+			productReference = 3D8E6E7C8CAA4B3BD33582F3EF85AA32 /* Pods_dinesmartTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		44CD1AB64F5D883ACF13DB70D819DF23 /* PinFloyd */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D30B5AC9FE07F02702468E8815FBD7B7 /* Build configuration list for PBXNativeTarget "PinFloyd" */;
+			buildConfigurationList = D555D7110A639FDF9B4B3B25540C31F5 /* Build configuration list for PBXNativeTarget "PinFloyd" */;
 			buildPhases = (
-				BF068BB57DAA7DC9BAC0BB65439B9E57 /* Headers */,
-				6DC8DCDE89E7EA96447EA487A8016FA4 /* Sources */,
-				016EEDA68DD7C461E722237B3EA895ED /* Frameworks */,
-				4A347D9AEC52334268582CC919520AA6 /* Resources */,
+				646D9D078583ED88B7678212A151C510 /* Headers */,
+				BBD4DB7A5B67F91092E259379A60E55A /* Sources */,
+				C3B372AE6D7692DCC326213BE17DA021 /* Frameworks */,
+				088519181B2AB715A12BAFBFDF036C29 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -353,45 +353,45 @@
 			);
 			name = PinFloyd;
 			productName = PinFloyd;
-			productReference = FA314C0FC03F17F10E0BD9DB1F8C2FD6 /* PinFloyd.framework */;
+			productReference = 0350EE6D592F6CA80AE3A9B67E3C685D /* PinFloyd.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		53527431A8C68AB8E88032CC5B66F70D /* Pods-dinesmart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 204100269578F7CEB0EDF7ABC22E00A2 /* Build configuration list for PBXNativeTarget "Pods-dinesmart" */;
+			buildConfigurationList = C2619CD3D663467403C07CBA804B71BE /* Build configuration list for PBXNativeTarget "Pods-dinesmart" */;
 			buildPhases = (
-				03E76CC05B77EDF0F7A36AF3D4C3B98E /* Headers */,
-				070BEDFC7EACB21CFCF179167FE49A72 /* Sources */,
-				4686A06EC7D2382BEE0D13F1C18E7D4C /* Frameworks */,
-				C50B68263BF799CC54CB5D7A607FFDDD /* Resources */,
+				AD3562F219136009994952B91CDF5AC3 /* Headers */,
+				164A0A9B8118BC28EB47BE95D6BD5D78 /* Sources */,
+				2500F68AE9E2D045712A91A5AF24B79F /* Frameworks */,
+				947D09AEBE90D97C1CA1ABEF429EB43F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A9A0EC423878548FE54913CB33C72AD1 /* PBXTargetDependency */,
+				131224CF5C4F3AEA5C89253058731A8B /* PBXTargetDependency */,
 			);
 			name = "Pods-dinesmart";
 			productName = "Pods-dinesmart";
-			productReference = 0F77F2D37AFABD86558091D05CFE4B9C /* Pods_dinesmart.framework */;
+			productReference = F2CDF4ECC0C1266D049BB5A5A6F79FE8 /* Pods_dinesmart.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		62845F78A8DA1E16D1D2EE0E84CEC7FD /* Pods-dinesmartUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2A07E93E6D92FA1ECD450235CE009F1 /* Build configuration list for PBXNativeTarget "Pods-dinesmartUITests" */;
+			buildConfigurationList = 3E8DAD9E447EA833EC5F52976516C55A /* Build configuration list for PBXNativeTarget "Pods-dinesmartUITests" */;
 			buildPhases = (
-				03374AAA74C021F1987913BE5E4736A2 /* Headers */,
-				FCF68393CAA3661F374DEFA8912051FC /* Sources */,
-				26680B1AAA7EE264960C30EB593CACAC /* Frameworks */,
-				7B25EB5B621D3D6ADDDB80C366322273 /* Resources */,
+				373E89CA1E1D407CEE3295C50820FD7B /* Headers */,
+				A4A0D747FD5B2E8136F6E7888E6A0405 /* Sources */,
+				A5C4EBF6378A1430BBDBDE43485C5ECD /* Frameworks */,
+				5A1EC003A0E8F367DA60A5D3CF3BD1A9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FDE4F9D2745B3F2C5D831F6FA9896F46 /* PBXTargetDependency */,
+				C01EA8DD7F623F46EDF66FED44863100 /* PBXTargetDependency */,
 			);
 			name = "Pods-dinesmartUITests";
 			productName = "Pods-dinesmartUITests";
-			productReference = CD963C619CFF061286286471A9E53D15 /* Pods_dinesmartUITests.framework */;
+			productReference = D0B3A711D5A143CC6668AA65EA6C7BBC /* Pods_dinesmartUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -400,11 +400,11 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -424,28 +424,28 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4A347D9AEC52334268582CC919520AA6 /* Resources */ = {
+		088519181B2AB715A12BAFBFDF036C29 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		58EA305AD317EEC216A8C0200F017E01 /* Resources */ = {
+		26A450B7463631749C480F236091C7A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B25EB5B621D3D6ADDDB80C366322273 /* Resources */ = {
+		5A1EC003A0E8F367DA60A5D3CF3BD1A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C50B68263BF799CC54CB5D7A607FFDDD /* Resources */ = {
+		947D09AEBE90D97C1CA1ABEF429EB43F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,74 +455,76 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		070BEDFC7EACB21CFCF179167FE49A72 /* Sources */ = {
+		164A0A9B8118BC28EB47BE95D6BD5D78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AB7BC8618AD43829C0907B337DC14ED /* Pods-dinesmart-dummy.m in Sources */,
+				8511D18360CA496862FEE8FBE87F35AC /* Pods-dinesmart-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DC8DCDE89E7EA96447EA487A8016FA4 /* Sources */ = {
+		A4A0D747FD5B2E8136F6E7888E6A0405 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A1C07C2C12569D98CCD5AB46315DE06 /* AnnotationAnimation.swift in Sources */,
-				611E417F1D75A194967B1A6BCCFC3F2C /* ClusterAnnotation.swift in Sources */,
-				ED694B20339E7CAF618C063FB1269C43 /* ClusterAnnotationView.swift in Sources */,
-				C12A04C1FF4D661A2FAA304DD6CBBC45 /* ClusteringManager.swift in Sources */,
-				44359272D7C845DF65BC0A63B5457406 /* ClusterPin.swift in Sources */,
-				F490D318C2F853B4A3BDA7C60BFDE98C /* MKGeometry+PinFloyd.swift in Sources */,
-				95B2B4B362295FF745B651075B7C1FDB /* MKMapView+PinFloyd.swift in Sources */,
-				1E3A8ECE3018B07CD7A330385EFECCF9 /* PinFloyd-dummy.m in Sources */,
-				8A2BFF483CBF1447F0FB0DD56C7DC9B7 /* QuadTreeNode.swift in Sources */,
+				600027BD03F99EE63349768CE1E35B88 /* Pods-dinesmartUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9B9E6DE0E95B72D8AC5B2D6D84E3290 /* Sources */ = {
+		BBD4DB7A5B67F91092E259379A60E55A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96BCBE498A571CDE7644557AEDEF95CA /* Pods-dinesmartTests-dummy.m in Sources */,
+				00C7DEF33FF20447DC4D07444BBF8789 /* AnnotationAnimation.swift in Sources */,
+				2B925B5343567A10739AB81AC1ED7E05 /* ClusterAnnotation.swift in Sources */,
+				07529FD4D046E26AF619E7119ACC1479 /* ClusterAnnotationView.swift in Sources */,
+				B61B321816DA0B5042507D8C68ED4990 /* ClusteringManager.swift in Sources */,
+				3B5326E2A52CB7FC47D630E2C9911C8E /* ClusterPin.swift in Sources */,
+				64A8E9DA618876E97F127116FBFF819B /* MKGeometry+PinFloyd.swift in Sources */,
+				FEA8C4B5C93C0D261F4497C3A795A2F2 /* MKMapView+PinFloyd.swift in Sources */,
+				B2A07A2E7B755F095F68911615401032 /* PinFloyd-dummy.m in Sources */,
+				7C768621EEB82CDDA06A028D661674B7 /* QuadTreeNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCF68393CAA3661F374DEFA8912051FC /* Sources */ = {
+		DCBBA01F909B44193B41C0413D600E0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				854C17FA8C751050D8DD2FEE7F756AB5 /* Pods-dinesmartUITests-dummy.m in Sources */,
+				47D7918E2B2A4D108AD6ED8133CDECD6 /* Pods-dinesmartTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		33A8DCBE9A691D16612743462492D66C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-dinesmart";
-			target = 53527431A8C68AB8E88032CC5B66F70D /* Pods-dinesmart */;
-			targetProxy = 56D98A274D03AA8223688BD51D8B9764 /* PBXContainerItemProxy */;
-		};
-		A9A0EC423878548FE54913CB33C72AD1 /* PBXTargetDependency */ = {
+		131224CF5C4F3AEA5C89253058731A8B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PinFloyd;
 			target = 44CD1AB64F5D883ACF13DB70D819DF23 /* PinFloyd */;
-			targetProxy = 7F6A78DA9220BCA7DC1318FCDBA55E88 /* PBXContainerItemProxy */;
+			targetProxy = 318AA091FD9CFA26C95C7A9757AC784E /* PBXContainerItemProxy */;
 		};
-		FDE4F9D2745B3F2C5D831F6FA9896F46 /* PBXTargetDependency */ = {
+		C01EA8DD7F623F46EDF66FED44863100 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-dinesmart";
 			target = 53527431A8C68AB8E88032CC5B66F70D /* Pods-dinesmart */;
-			targetProxy = 914F1289284E92D638B87BED747DD983 /* PBXContainerItemProxy */;
+			targetProxy = BDE58805A2C04403E0DFAE9462C92884 /* PBXContainerItemProxy */;
+		};
+		E31896D4CF389C247F3F17221D9E2470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-dinesmart";
+			target = 53527431A8C68AB8E88032CC5B66F70D /* Pods-dinesmart */;
+			targetProxy = 3B2CCFF4B913F8DF2917790633C32403 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10F3733593C16E83631B9A4F54F4FBB8 /* Release */ = {
+		00CB42878130237EE5D7328405D29A7D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 136FFDE16A51B5A9535D2C1BB34EB638 /* PinFloyd.xcconfig */;
+			baseConfigurationReference = 1A74D430471545784D64B9CFCFD0EFBF /* Pods-dinesmartTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -532,21 +534,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PinFloyd/PinFloyd-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PinFloyd/PinFloyd-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-dinesmartTests/Pods-dinesmartTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/PinFloyd/PinFloyd.modulemap";
-				PRODUCT_MODULE_NAME = PinFloyd;
-				PRODUCT_NAME = PinFloyd;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dinesmartTests/Pods-dinesmartTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -618,7 +622,42 @@
 			};
 			name = Debug;
 		};
-		1588D59433555128268A23F2FF923076 /* Debug */ = {
+		2503BAE5AE3EAA3145FF5710C2355E27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 136FFDE16A51B5A9535D2C1BB34EB638 /* PinFloyd.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PinFloyd/PinFloyd-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PinFloyd/PinFloyd-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PinFloyd/PinFloyd.modulemap";
+				PRODUCT_MODULE_NAME = PinFloyd;
+				PRODUCT_NAME = PinFloyd;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A25FED18F5941A3B44A9479D9C74436 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE1B39DED80AA945B2C68AD88E685009 /* Pods-dinesmartUITests.debug.xcconfig */;
 			buildSettings = {
@@ -656,12 +695,10 @@
 			};
 			name = Debug;
 		};
-		75E8688717B4A0ED7F85093883C00B6B /* Release */ = {
+		873F9981C4894C8ADEEF221FD7D09D50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C989F247862E641DC1247E4DAB8E7D3 /* Pods-dinesmartUITests.release.xcconfig */;
+			baseConfigurationReference = 136FFDE16A51B5A9535D2C1BB34EB638 /* PinFloyd.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -671,146 +708,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-dinesmartUITests/Pods-dinesmartUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PinFloyd/PinFloyd-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PinFloyd/PinFloyd-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-dinesmartUITests/Pods-dinesmartUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/PinFloyd/PinFloyd.modulemap";
+				PRODUCT_MODULE_NAME = PinFloyd;
+				PRODUCT_NAME = PinFloyd;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		812E3221055D8144D39D6DEE060A7103 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E294DF8269AA7A8EA7E19AB80CE1B39 /* Pods-dinesmartTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-dinesmartTests/Pods-dinesmartTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-dinesmartTests/Pods-dinesmartTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8707456B5F51975A8706F98F74A04240 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A74D430471545784D64B9CFCFD0EFBF /* Pods-dinesmartTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-dinesmartTests/Pods-dinesmartTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-dinesmartTests/Pods-dinesmartTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B59F484A65C23A0148346D68F5986CBD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9BC6EBAB13F4C4520D0CDF74760E95B /* Pods-dinesmart.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-dinesmart/Pods-dinesmart-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-dinesmart/Pods-dinesmart.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C4066B0D0EB88040D2F0ED18BCDF10A0 /* Release */ = {
+		C4423C08CCEFAC2F44AC608C2BD111AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E5EFD4B89CDCC36325603E00941CDCDD /* Pods-dinesmart.release.xcconfig */;
 			buildSettings = {
@@ -849,10 +768,12 @@
 			};
 			name = Release;
 		};
-		D42679A98A16CC6A18A0AC2C68BFCEDF /* Debug */ = {
+		C55CEEBFDCE679C66BDAFAA8A8B4F3A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 136FFDE16A51B5A9535D2C1BB34EB638 /* PinFloyd.xcconfig */;
+			baseConfigurationReference = 9E294DF8269AA7A8EA7E19AB80CE1B39 /* Pods-dinesmartTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -862,21 +783,100 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PinFloyd/PinFloyd-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PinFloyd/PinFloyd-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-dinesmartTests/Pods-dinesmartTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/PinFloyd/PinFloyd.modulemap";
-				PRODUCT_MODULE_NAME = PinFloyd;
-				PRODUCT_NAME = PinFloyd;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dinesmartTests/Pods-dinesmartTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3106F425947C2C60730A362B76C3A3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C989F247862E641DC1247E4DAB8E7D3 /* Pods-dinesmartUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-dinesmartUITests/Pods-dinesmartUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dinesmartUITests/Pods-dinesmartUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DBD68623FF239A4C66AB91700F1C4B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9BC6EBAB13F4C4520D0CDF74760E95B /* Pods-dinesmart.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-dinesmart/Pods-dinesmart-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dinesmart/Pods-dinesmart.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -946,11 +946,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		204100269578F7CEB0EDF7ABC22E00A2 /* Build configuration list for PBXNativeTarget "Pods-dinesmart" */ = {
+		3E8DAD9E447EA833EC5F52976516C55A /* Build configuration list for PBXNativeTarget "Pods-dinesmartUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B59F484A65C23A0148346D68F5986CBD /* Debug */,
-				C4066B0D0EB88040D2F0ED18BCDF10A0 /* Release */,
+				6A25FED18F5941A3B44A9479D9C74436 /* Debug */,
+				D3106F425947C2C60730A362B76C3A3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -964,29 +964,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57C58E69C9E4EB32588923E1F6F99D49 /* Build configuration list for PBXNativeTarget "Pods-dinesmartTests" */ = {
+		C2619CD3D663467403C07CBA804B71BE /* Build configuration list for PBXNativeTarget "Pods-dinesmart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				812E3221055D8144D39D6DEE060A7103 /* Debug */,
-				8707456B5F51975A8706F98F74A04240 /* Release */,
+				DBD68623FF239A4C66AB91700F1C4B70 /* Debug */,
+				C4423C08CCEFAC2F44AC608C2BD111AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2A07E93E6D92FA1ECD450235CE009F1 /* Build configuration list for PBXNativeTarget "Pods-dinesmartUITests" */ = {
+		D555D7110A639FDF9B4B3B25540C31F5 /* Build configuration list for PBXNativeTarget "PinFloyd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1588D59433555128268A23F2FF923076 /* Debug */,
-				75E8688717B4A0ED7F85093883C00B6B /* Release */,
+				873F9981C4894C8ADEEF221FD7D09D50 /* Debug */,
+				2503BAE5AE3EAA3145FF5710C2355E27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D30B5AC9FE07F02702468E8815FBD7B7 /* Build configuration list for PBXNativeTarget "PinFloyd" */ = {
+		EFD934749A74E3FA65D2D411B45C2DB3 /* Build configuration list for PBXNativeTarget "Pods-dinesmartTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D42679A98A16CC6A18A0AC2C68BFCEDF /* Debug */,
-				10F3733593C16E83631B9A4F54F4FBB8 /* Release */,
+				C55CEEBFDCE679C66BDAFAA8A8B4F3A5 /* Debug */,
+				00CB42878130237EE5D7328405D29A7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

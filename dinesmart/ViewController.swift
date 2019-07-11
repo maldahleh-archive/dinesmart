@@ -64,12 +64,12 @@ extension ViewController: MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        guard let annotation = view.annotation,
-            let locations = inspectionDictionary.locationsAt(annotation.coordinate.latitude, annotation.coordinate.longitude) else {
+        guard let annotation = view.annotation else {
             return
         }
         
-        print(locations)
+        let annotations = (annotation as? ClusterAnnotation)?.heldAnnotations ?? [annotation]
+        print(annotations)
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
