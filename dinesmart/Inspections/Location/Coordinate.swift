@@ -8,7 +8,7 @@
 
 import MapKit
 
-struct Coordinate: Decodable {
+struct Coordinate: Hashable, Decodable {
     let latitude: String
     let longitude: String
     

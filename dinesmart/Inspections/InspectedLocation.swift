@@ -8,7 +8,7 @@
 
 import MapKit
 
-struct InspectedLocation: Decodable {
+struct InspectedLocation: Hashable, Decodable {
     let id: String
     let name: String
     let type: String

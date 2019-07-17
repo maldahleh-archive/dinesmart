@@ -6,7 +6,7 @@
 //  Copyright © 2019 Codeovo Software Ltd. All rights reserved.
 //
 
-struct Inspection: Decodable {
+struct Inspection: Hashable, Decodable {
     let id: String
     let inspectionDate: String
     let status: String
