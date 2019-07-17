@@ -18,6 +18,10 @@ class ViewController: UIViewController {
     let clusteringManager = ClusteringManager()
     let inspectionDictionary = InspectionDictionary()
     
+    private struct Constants {
+        static let DetailSegue = "toDetailView"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setInteractionAllowed(to: false)
@@ -77,9 +81,10 @@ extension ViewController: MKMapViewDelegate {
             return locations
         }
         
-        let flatInspections: [InspectedLocation] = inspections.flatMap { $0 }
-        let uniqueInspections = Array(Set(flatInspections))
-        print(uniqueInspections)
+        var flatInspections = inspections.flatMap { $0 }
+        flatInspections.removeDuplicates()
+        
+        performSegue(withIdentifier: Constants.DetailSegue, sender: flatInspections)
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
