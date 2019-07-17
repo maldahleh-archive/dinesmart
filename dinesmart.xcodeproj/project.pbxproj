@@ -30,6 +30,7 @@
 		670881E422A83D000012DD3D /* Infraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670881E322A83D000012DD3D /* Infraction.swift */; };
 		671D811022D6762700121E1B /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D810F22D6762700121E1B /* UIViewController+Alerts.swift */; };
 		67AB782122B4A62900C8F5C2 /* MKMapView+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB782022B4A62900C8F5C2 /* MKMapView+Center.swift */; };
+		67B3871422DE5BAA0064155C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B3871322DE5BAA0064155C /* DetailViewController.swift */; };
 		67DF0C0622B7289900AF7DFF /* InspectionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DF0C0522B7289900AF7DFF /* InspectionDictionary.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		670881E322A83D000012DD3D /* Infraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infraction.swift; sourceTree = "<group>"; };
 		671D810F22D6762700121E1B /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		67AB782022B4A62900C8F5C2 /* MKMapView+Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Center.swift"; sourceTree = "<group>"; };
+		67B3871322DE5BAA0064155C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		67DF0C0522B7289900AF7DFF /* InspectionDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionDictionary.swift; sourceTree = "<group>"; };
 		67FE043122D6E46400155DA6 /* PinFloyd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PinFloyd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B94CE0F6D72E31F7888CC1 /* Pods-dinesmartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinesmartTests.debug.xcconfig"; path = "Target Support Files/Pods-dinesmartTests/Pods-dinesmartTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,13 +158,13 @@
 		6708819622A76E0A0012DD3D /* dinesmart */ = {
 			isa = PBXGroup;
 			children = (
+				67B3871222DE5B890064155C /* Controllers */,
 				670881C922A835D10012DD3D /* Networking */,
 				670881D922A83A840012DD3D /* Inspections */,
 				67DF0C0422B7181400AF7DFF /* InspectionDictionary */,
 				670881C822A81B200012DD3D /* Storyboards */,
 				67AB781F22B4A60C00C8F5C2 /* Extensions */,
 				6708819722A76E0A0012DD3D /* AppDelegate.swift */,
-				6708819922A76E0A0012DD3D /* ViewController.swift */,
 				670881A122A76E0B0012DD3D /* Assets.xcassets */,
 				670881A622A76E0B0012DD3D /* Info.plist */,
 				6708819E22A76E0A0012DD3D /* dinesmart.xcdatamodeld */,
@@ -276,6 +278,15 @@
 				671D810F22D6762700121E1B /* UIViewController+Alerts.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		67B3871222DE5B890064155C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6708819922A76E0A0012DD3D /* ViewController.swift */,
+				67B3871322DE5BAA0064155C /* DetailViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		67DF0C0422B7181400AF7DFF /* InspectionDictionary */ = {
@@ -519,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				670881E422A83D000012DD3D /* Infraction.swift in Sources */,
+				67B3871422DE5BAA0064155C /* DetailViewController.swift in Sources */,
 				670881D322A836750012DD3D /* Endpoint.swift in Sources */,
 				670881D022A836540012DD3D /* Result.swift in Sources */,
 				670881DB22A83BD90012DD3D /* InspectedLocation.swift in Sources */,

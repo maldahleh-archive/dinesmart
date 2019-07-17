@@ -69,7 +69,17 @@ extension ViewController: MKMapViewDelegate {
         }
         
         let annotations = (annotation as? ClusterAnnotation)?.heldAnnotations ?? [annotation]
-        print(annotations)
+        let inspections: [[InspectedLocation]] = annotations.compactMap { [weak self] annotation in
+            guard let self = self, let locations = self.inspectionDictionary.locationsAt(annotation.coordinate.latitude, annotation.coordinate.longitude) else {
+                return nil
+            }
+            
+            return locations
+        }
+        
+        let flatInspections: [InspectedLocation] = inspections.flatMap { $0 }
+        let uniqueInspections = Array(Set(flatInspections))
+        print(uniqueInspections)
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
