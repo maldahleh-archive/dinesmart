@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
     
     var locationManager: CLLocationManager!
+    var allInspections: [InspectedLocation] = []
     
     let client = InspectionClient()
     let clusteringManager = ClusteringManager()
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
                         return nil
                     }
                     
+                    self.allInspections.append(inspection)
                     self.inspectionDictionary.insert(annotation.coordinate.latitude, annotation.coordinate.longitude, value: inspection)
                     return annotation
                 })
@@ -75,6 +77,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func searchButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: Constants.DetailSegue, sender: nil)
     }
     
     func setInteractionAllowed(to allowed: Bool) {
@@ -91,6 +94,7 @@ class ViewController: UIViewController {
         }
         
         guard let selectedInspections = sender as? [InspectedLocation] else {
+            destination.inspectedLocations = allInspections
             return
         }
         

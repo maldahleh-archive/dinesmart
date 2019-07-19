@@ -9,9 +9,8 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var inspectionsTable: UITableView!
-    
-    let searchController = UISearchController(searchResultsController: nil)
     
     var inspectedLocations = [InspectedLocation]()
     var filteredLocations = [InspectedLocation]()
@@ -19,15 +18,13 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         inspectionsTable.dataSource = self
-        filteredLocations = inspectedLocations
+        searchBar.delegate = self
         
-        if inspectedLocations.count > 1 {
-            searchController.searchResultsUpdater = self
-            searchController.dimsBackgroundDuringPresentation = false
-            definesPresentationContext = true
-            
-            inspectionsTable.tableHeaderView = searchController.searchBar
-        }
+        filteredLocations = inspectedLocations
+    }
+    
+    @IBAction func dismissControllerTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
@@ -48,17 +45,16 @@ extension DetailViewController: UITableViewDataSource {
     }
 }
 
-// MARK: - UISearchResultsUpdating
-extension DetailViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        guard let searchText = searchController.searchBar.text?.lowercased(),
-            !searchText.isEmpty else {
-                return
-        }
-        
-        filteredLocations = inspectedLocations.filter { location in
-            return location.address.lowercased().contains(searchText)
-                || location.name.lowercased().contains(searchText)
+// MARKL - UISearchBarDelegate
+extension DetailViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty || searchText == "" {
+            filteredLocations = inspectedLocations
+        } else {
+            filteredLocations = inspectedLocations.filter { location in
+                return location.address.lowercased().contains(searchText.lowercased())
+                    || location.name.lowercased().contains(searchText.lowercased())
+            }
         }
         
         inspectionsTable.reloadData()
