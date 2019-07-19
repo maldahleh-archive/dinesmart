@@ -14,9 +14,15 @@ class DetailViewController: UIViewController {
     
     var inspectedLocations = [InspectedLocation]()
     var filteredLocations = [InspectedLocation]()
+    
+    private struct Constants {
+        static let ReuseIdentifier = "InspectionCell"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hidesKeyboardOnTap()
+        
         inspectionsTable.dataSource = self
         searchBar.delegate = self
         
@@ -35,12 +41,18 @@ extension DetailViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: DetailCell.ReuseIdentifier, for: indexPath) as? DetailCell,
-            let inspection = filteredLocations.safeGet(index: indexPath.row) else {
-                return UITableViewCell()
+        guard let inspection = filteredLocations.safeGet(index: indexPath.row) else {
+            return UITableViewCell()
         }
         
-        cell.update(for: inspection)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.ReuseIdentifier, for: indexPath)
+        guard let mainLabel = cell.textLabel, let secondaryLabel = cell.detailTextLabel else {
+            return UITableViewCell()
+        }
+        
+        mainLabel.text = inspection.name
+        secondaryLabel.text = inspection.address
+
         return cell
     }
 }

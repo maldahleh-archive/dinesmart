@@ -119,6 +119,7 @@
                                         <color key="backgroundColor" name="BackgroundColor"/>
                                         <color key="tintColor" name="TextColor"/>
                                         <color key="separatorColor" name="TextColor"/>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <color key="sectionIndexColor" name="TextColor"/>
                                         <color key="sectionIndexBackgroundColor" name="BackgroundColor"/>
                                         <searchBar key="tableHeaderView" contentMode="redraw" misplaced="YES" id="D6r-tt-GVn" userLabel="SearchBar">
@@ -129,88 +130,31 @@
                                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                         </searchBar>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InspectionCell" rowHeight="90" id="JON-7s-yeS" customClass="DetailCell" customModule="dinesmart" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="72" width="394" height="90"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InspectionCell" textLabel="OhP-dW-fCc" detailTextLabel="s3Z-X6-uA7" style="IBUITableViewCellStyleSubtitle" id="JON-7s-yeS">
+                                                <rect key="frame" x="0.0" y="72" width="394" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JON-7s-yeS" id="J4Q-LH-toE">
-                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="89.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="356" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fiS-1H-VVM" userLabel="DataStack">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHF-4Z-7fA" userLabel="RestaurantName">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="30" id="cca-Sh-w29"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                                    <color key="textColor" name="TextColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wNQ-MY-4xG" userLabel="TypeStackView">
-                                                                    <rect key="frame" x="0.0" y="30" width="414" height="29.5"/>
-                                                                    <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9c-bg-x3U" userLabel="Type">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="29.5"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="90" id="K2D-LB-CKr"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                                            <color key="textColor" name="TextColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N03-0E-k3z" userLabel="PlaceType">
-                                                                            <rect key="frame" x="95" y="0.0" width="319" height="29.5"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <color key="textColor" name="TextColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                    </subviews>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="30" id="JcJ-7s-TW3"/>
-                                                                    </constraints>
-                                                                </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HJx-XL-uXR" userLabel="AddressStackView">
-                                                                    <rect key="frame" x="0.0" y="59.5" width="414" height="30"/>
-                                                                    <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdL-iD-gsr" userLabel="Address">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="90" id="DdK-VD-IqL"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                                            <color key="textColor" name="TextColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOq-s6-aNX" userLabel="AddressInfo">
-                                                                            <rect key="frame" x="95" y="0.0" width="319" height="30"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <color key="textColor" name="TextColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                    </subviews>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="30" id="68e-AP-E91"/>
-                                                                    </constraints>
-                                                                </stackView>
-                                                            </subviews>
-                                                        </stackView>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OhP-dW-fCc">
+                                                            <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s3Z-X6-uA7">
+                                                            <rect key="frame" x="15" y="25.5" width="33" height="14.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="fiS-1H-VVM" firstAttribute="leading" secondItem="J4Q-LH-toE" secondAttribute="leading" id="8yb-7R-r9x"/>
-                                                        <constraint firstAttribute="bottom" secondItem="fiS-1H-VVM" secondAttribute="bottom" id="CKl-JO-RTi"/>
-                                                        <constraint firstItem="fiS-1H-VVM" firstAttribute="top" secondItem="J4Q-LH-toE" secondAttribute="top" id="Spi-hY-xPa"/>
-                                                        <constraint firstAttribute="trailing" secondItem="fiS-1H-VVM" secondAttribute="trailing" id="YB0-WB-ML0"/>
-                                                    </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" name="BackgroundColor"/>
                                                 <color key="tintColor" name="TextColor"/>
-                                                <connections>
-                                                    <outlet property="addressLabel" destination="ZOq-s6-aNX" id="wFh-Rk-hSA"/>
-                                                    <outlet property="nameLabel" destination="cHF-4Z-7fA" id="s3f-dJ-fbv"/>
-                                                    <outlet property="typeLabel" destination="N03-0E-k3z" id="HaJ-0F-SvC"/>
-                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
