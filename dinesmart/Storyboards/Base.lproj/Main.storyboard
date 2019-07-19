@@ -47,7 +47,7 @@
                                 </constraints>
                                 <state key="normal" image="LocationIcon"/>
                                 <connections>
-                                    <action selector="didTapCentreLocationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="183-al-mSw"/>
+                                    <action selector="centreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Obb-Sb-Mg3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wo-nX-npN" userLabel="SearchButton">
@@ -57,6 +57,9 @@
                                     <constraint firstAttribute="height" constant="40" id="xBi-bm-F15"/>
                                 </constraints>
                                 <state key="normal" image="SearchIcon"/>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFZ-UF-pgV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -81,6 +84,7 @@
                         <outlet property="centreButton" destination="6uI-GC-f6D" id="WV0-pq-dBA"/>
                         <outlet property="inspectionMapView" destination="zzW-01-z2g" id="yVb-Rn-32O"/>
                         <outlet property="loadingLabel" destination="Dq1-qK-keo" id="CLV-fm-509"/>
+                        <outlet property="searchButton" destination="2Wo-nX-npN" id="gDH-pR-ZEe"/>
                         <segue destination="UgO-QT-xbC" kind="presentation" identifier="toDetailView" id="lLM-kv-DUL"/>
                     </connections>
                 </viewController>

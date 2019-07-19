@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var inspectionMapView: MKMapView!
     @IBOutlet weak var loadingLabel: UILabel!
     @IBOutlet weak var centreButton: UIButton!
+    @IBOutlet weak var searchButton: UIButton!
     
     var locationManager: CLLocationManager!
     
@@ -66,15 +67,21 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func didTapCentreLocationButton(_ sender: Any) {
+    @IBAction func centreButtonTapped(_ sender: Any) {
         if let userLocation = locationManager.location?.coordinate {
             let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: Constants.CentreMeters, longitudinalMeters: Constants.CentreMeters)
             inspectionMapView.setRegion(viewRegion, animated: false)
         }
     }
     
+    @IBAction func searchButtonTapped(_ sender: Any) {
+    }
+    
     func setInteractionAllowed(to allowed: Bool) {
         inspectionMapView.isUserInteractionEnabled = allowed
+        searchButton.isUserInteractionEnabled = allowed
+        centreButton.isUserInteractionEnabled = allowed
+        
         loadingLabel.isHidden = allowed
     }
 }
