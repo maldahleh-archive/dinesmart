@@ -45,20 +45,30 @@
                                     <constraint firstAttribute="height" constant="20" id="An3-j4-jEk"/>
                                     <constraint firstAttribute="width" constant="20" id="Kua-7C-m5a"/>
                                 </constraints>
-                                <state key="normal" image="location-icon"/>
+                                <state key="normal" image="LocationIcon"/>
                                 <connections>
                                     <action selector="didTapCentreLocationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="183-al-mSw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wo-nX-npN" userLabel="SearchButton">
+                                <rect key="frame" x="20" y="94" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="cc6-qP-RTv"/>
+                                    <constraint firstAttribute="height" constant="40" id="xBi-bm-F15"/>
+                                </constraints>
+                                <state key="normal" image="SearchIcon"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="2Wo-nX-npN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0fx-wv-BOg"/>
                             <constraint firstItem="zzW-01-z2g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1cg-ZL-vEV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dq1-qK-keo" secondAttribute="trailing" id="GWw-2I-5Qv"/>
                             <constraint firstItem="Dq1-qK-keo" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Icr-wS-7gF"/>
                             <constraint firstItem="Dq1-qK-keo" firstAttribute="top" secondItem="6uI-GC-f6D" secondAttribute="bottom" constant="8" id="JLL-NS-Ghv"/>
                             <constraint firstAttribute="bottom" secondItem="zzW-01-z2g" secondAttribute="bottom" id="VhI-hy-5s5"/>
                             <constraint firstItem="zzW-01-z2g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aBd-nY-a1Y"/>
+                            <constraint firstItem="2Wo-nX-npN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="hmi-YM-6y4"/>
                             <constraint firstItem="inb-nc-ufL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="igK-65-HZd"/>
                             <constraint firstItem="zzW-01-z2g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jvw-Iv-brG"/>
                             <constraint firstItem="inb-nc-ufL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ngK-fP-CGs"/>
@@ -186,8 +196,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LocationIcon" width="20" height="20"/>
         <image name="Logo" width="2037" height="1377"/>
-        <image name="location-icon" width="20" height="20"/>
+        <image name="SearchIcon" width="30" height="30"/>
         <namedColor name="BackgroundColor">
             <color red="0.99607843137254903" green="0.9882352941176471" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

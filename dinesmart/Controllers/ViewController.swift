@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     private struct Constants {
         static let DetailSegue = "toDetailView"
         
-        static let CentreMeters: Double = 200
+        static let CentreMeters: Double = 400
     }
     
     override func viewDidLoad() {
