@@ -51,8 +51,9 @@ extension DetailViewController: UITableViewDataSource {
 // MARK: - UISearchResultsUpdating
 extension DetailViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let searchText = searchController.searchBar.text?.lowercased() else {
-            return
+        guard let searchText = searchController.searchBar.text?.lowercased(),
+            !searchText.isEmpty else {
+                return
         }
         
         filteredLocations = inspectedLocations.filter { location in
