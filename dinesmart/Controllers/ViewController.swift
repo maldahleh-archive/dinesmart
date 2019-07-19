@@ -6,6 +6,7 @@
 //  Copyright © 2019 Codeovo Software Ltd. All rights reserved.
 //
 
+import CoreLocation
 import PinFloyd
 import MapKit
 import UIKit
@@ -13,6 +14,9 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var inspectionMapView: MKMapView!
     @IBOutlet weak var loadingLabel: UILabel!
+    @IBOutlet weak var centreButton: UIButton!
+    
+    var locationManager: CLLocationManager!
     
     let client = InspectionClient()
     let clusteringManager = ClusteringManager()
@@ -20,6 +24,8 @@ class ViewController: UIViewController {
     
     private struct Constants {
         static let DetailSegue = "toDetailView"
+        
+        static let CentreMeters: Double = 200
     }
     
     override func viewDidLoad() {
@@ -28,6 +34,11 @@ class ViewController: UIViewController {
         
         inspectionMapView.delegate = self
         inspectionMapView.center()
+        
+        if !CLLocationManager.locationServicesEnabled()
+            || CLLocationManager.authorizationStatus() != .authorizedWhenInUse {
+            centreButton.isHidden = true
+        }
         
         // TODO: WIP
         client.inspections { [weak self] result in
@@ -52,6 +63,13 @@ class ViewController: UIViewController {
             case .failure:
                 self.presentAlertWith(message: "API Request Failed")
             }
+        }
+    }
+    
+    @IBAction func didTapCentreLocationButton(_ sender: Any) {
+        if let userLocation = locationManager.location?.coordinate {
+            let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: Constants.CentreMeters, longitudinalMeters: Constants.CentreMeters)
+            inspectionMapView.setRegion(viewRegion, animated: false)
         }
     }
     

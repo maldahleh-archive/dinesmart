@@ -21,6 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         locationManager = CLLocationManager()
         locationManager?.requestWhenInUseAuthorization()
         
+        guard let rootVC = window?.rootViewController as? ViewController else {
+            return true
+        }
+        
+        rootVC.locationManager = locationManager
         return true
     }
 
