@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     let inspectionDictionary = InspectionDictionary()
     
     private struct Constants {
+        static let ClusterAnnotationIdentifier = ClusterAnnotationView.identifier
+        
         static let DetailSegue = "toDetailView"
         
         static let CentreMeters: Double = 400
@@ -38,7 +40,7 @@ class ViewController: UIViewController {
         
         if !CLLocationManager.locationServicesEnabled()
             || CLLocationManager.authorizationStatus() != .authorizedWhenInUse {
-            centreButton.isHidden = true
+                centreButton.isHidden = true
         }
         
         // TODO: WIP
@@ -117,11 +119,9 @@ extension ViewController: MKMapViewDelegate {
             return nil
         }
         
-        let id = ClusterAnnotationView.identifier
-        
-        var clusterView = mapView.dequeueReusableAnnotationView(withIdentifier: id)
+        var clusterView = mapView.dequeueReusableAnnotationView(withIdentifier: Constants.ClusterAnnotationIdentifier)
         if clusterView == nil {
-            clusterView = ClusterAnnotationView(annotation: annotation, reuseIdentifier: id)
+            clusterView = ClusterAnnotationView(annotation: annotation, reuseIdentifier: Constants.ClusterAnnotationIdentifier)
         } else {
             clusterView?.annotation = annotation
         }
