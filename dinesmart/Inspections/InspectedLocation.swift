@@ -22,7 +22,7 @@ struct InspectedLocation: Hashable, Decodable {
 
 // MARK: - Mapping
 extension InspectedLocation {
-    func asMKAnnotation() -> MKAnnotation? {
+    func asAnnotation() -> MKPointAnnotation? {
         guard let coordinate = coords.asCLLocationCoordinate() else {
             return nil
         }

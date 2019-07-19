@@ -17,12 +17,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var centreButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     
-    var locationManager: CLLocationManager!
-    var allInspections: [InspectedLocation] = []
+    var loadedInspections: [MKPointAnnotation: InspectedLocation] = [:]
     
+    var locationManager: CLLocationManager!
     let client = InspectionClient()
     let clusteringManager = ClusteringManager()
-    let inspectionDictionary = InspectionDictionary()
     
     private struct Constants {
         static let ClusterAnnotationIdentifier = ClusterAnnotationView.identifier
@@ -53,12 +52,11 @@ class ViewController: UIViewController {
             switch result {
             case .success(let inspections):
                 self.clusteringManager.add(annotations: inspections.compactMap { inspection in
-                    guard let annotation = inspection.asMKAnnotation() else {
+                    guard let annotation = inspection.asAnnotation() else {
                         return nil
                     }
                     
-                    self.allInspections.append(inspection)
-                    self.inspectionDictionary.insert(annotation.coordinate.latitude, annotation.coordinate.longitude, value: inspection)
+                    self.loadedInspections[annotation] = inspection
                     return annotation
                 })
                 
@@ -83,7 +81,11 @@ class ViewController: UIViewController {
     func setInteractionAllowed(to allowed: Bool) {
         inspectionMapView.isUserInteractionEnabled = allowed
         searchButton.isUserInteractionEnabled = allowed
+        
         centreButton.isUserInteractionEnabled = allowed
+        if allowed {
+            centreButton.center = CGPoint(x: centreButton.center.x, y: centreButton.center.y + 25)
+        }
         
         loadingLabel.isHidden = allowed
     }
@@ -94,7 +96,7 @@ class ViewController: UIViewController {
         }
         
         guard let selectedInspections = sender as? [InspectedLocation] else {
-            destination.inspectedLocations = allInspections
+            destination.inspectedLocations = Array(loadedInspections.values)
             return
         }
         
@@ -114,18 +116,17 @@ extension ViewController: MKMapViewDelegate {
         }
         
         let annotations = (annotation as? ClusterAnnotation)?.heldAnnotations ?? [annotation]
-        let inspections: [[InspectedLocation]] = annotations.compactMap { [weak self] annotation in
-            guard let self = self, let locations = self.inspectionDictionary.locationsAt(annotation.coordinate.latitude, annotation.coordinate.longitude) else {
-                return nil
+        let inspections: [InspectedLocation] = annotations.compactMap { [weak self] annotation in
+            guard let self = self,
+                let pointAnnotation = annotation as? MKPointAnnotation,
+                let location = self.loadedInspections[pointAnnotation] else {
+                    return nil
             }
             
-            return locations
+            return location
         }
         
-        var flatInspections = inspections.flatMap { $0 }
-        flatInspections.removeDuplicates()
-        
-        performSegue(withIdentifier: Constants.DetailSegue, sender: flatInspections)
+        performSegue(withIdentifier: Constants.DetailSegue, sender: inspections)
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
