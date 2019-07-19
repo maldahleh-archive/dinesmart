@@ -109,7 +109,7 @@
                                 <color key="sectionIndexColor" name="TextColor"/>
                                 <color key="sectionIndexBackgroundColor" name="BackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InspectionCell" rowHeight="90" id="JON-7s-yeS">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InspectionCell" rowHeight="90" id="JON-7s-yeS" customClass="DetailCell" customModule="dinesmart" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JON-7s-yeS" id="J4Q-LH-toE">
@@ -186,6 +186,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="BackgroundColor"/>
                                         <color key="tintColor" name="TextColor"/>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="ZOq-s6-aNX" id="wFh-Rk-hSA"/>
+                                            <outlet property="nameLabel" destination="cHF-4Z-7fA" id="s3f-dJ-fbv"/>
+                                            <outlet property="typeLabel" destination="N03-0E-k3z" id="HaJ-0F-SvC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -193,10 +198,13 @@
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="NKS-vd-thi"/>
                     </view>
+                    <connections>
+                        <outlet property="inspectionsTable" destination="atr-Na-jf8" id="8Ah-hG-4MO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktu-8l-M8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108.6956521739132" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1113" y="138"/>
         </scene>
     </scenes>
     <resources>

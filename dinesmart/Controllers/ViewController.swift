@@ -25,9 +25,7 @@ class ViewController: UIViewController {
     
     private struct Constants {
         static let ClusterAnnotationIdentifier = ClusterAnnotationView.identifier
-        
         static let DetailSegue = "toDetailView"
-        
         static let CentreMeters: Double = 400
     }
     
@@ -85,6 +83,18 @@ class ViewController: UIViewController {
         centreButton.isUserInteractionEnabled = allowed
         
         loadingLabel.isHidden = allowed
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? DetailViewController else {
+            return
+        }
+        
+        guard let selectedInspections = sender as? [InspectedLocation] else {
+            return
+        }
+        
+        destination.inspectedLocations = selectedInspections
     }
 }
 
