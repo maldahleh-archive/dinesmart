@@ -9,13 +9,10 @@
 import MapKit
 
 struct InspectedLocation: Hashable, Decodable {
-    let id: String
     let name: String
     let type: String
     let address: String
     let coords: Coordinate
-    let minInspections: String
-    let dataSource: String
     
     let inspections: [Inspection]
 }

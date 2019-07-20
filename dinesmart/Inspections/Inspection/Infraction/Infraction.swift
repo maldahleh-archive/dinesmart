@@ -7,7 +7,6 @@
 //
 
 struct Infraction: Hashable, Decodable {
-    let infractionDetails: String
+    let details: String
     let severity: String
-    let action: String
 }

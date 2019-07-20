@@ -28,7 +28,7 @@ class InspectionViewController: UIViewController {
         nameLabel.text = inspectedLocation.name
         typeLabel.text = inspectedLocation.type
         addressLabel.text = inspectedLocation.address
-        dataSourceLabel.text = "Source: \(inspectedLocation.dataSource)"
+        dataSourceLabel.text = "Source: "
     }
     
     @IBAction func dismissButtonTapped(_ sender: Any) {
@@ -43,7 +43,12 @@ extension InspectionViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return inspectedLocation.inspections[section].infractions.count
+        let totalInfractions = inspectedLocation.inspections[section].infractions.count
+        if totalInfractions == 0 {
+            return 1
+        }
+        
+        return totalInfractions
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -51,13 +56,12 @@ extension InspectionViewController: UITableViewDataSource {
             return nil
         }
         
-        return "#\(section + 1) - \(inspection.status) (\(inspection.inspectionDate))"
+        return "\(inspection.date) - \(inspection.status)"
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let inspection = inspectedLocation.inspections.safeGet(index: indexPath.section),
-            let infraction = inspection.infractions.safeGet(index: indexPath.row) else {
-                return UITableViewCell()
+        guard let inspection = inspectedLocation.inspections.safeGet(index: indexPath.section) else {
+            return UITableViewCell()
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifier, for: indexPath)
@@ -65,7 +69,14 @@ extension InspectionViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
-        mainLabel.text = infraction.infractionDetails
+        guard let infraction = inspection.infractions.safeGet(index: indexPath.row) else {
+            mainLabel.text = "No Violations"
+            secondaryLabel.text = ""
+            
+            return cell
+        }
+        
+        mainLabel.text = infraction.details
         secondaryLabel.text = "Severity: \(infraction.severity)"
         
         return cell

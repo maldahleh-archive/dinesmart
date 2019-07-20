@@ -9,11 +9,11 @@
 import MapKit
 
 struct Coordinate: Hashable, Decodable {
-    let latitude: String
-    let longitude: String
+    let lat: String
+    let lon: String
     
     func asCLLocationCoordinate() -> CLLocationCoordinate2D? {
-        guard let lat = Double(latitude), let long = Double(longitude) else {
+        guard let lat = Double(lat), let long = Double(lon) else {
             return nil
         }
         

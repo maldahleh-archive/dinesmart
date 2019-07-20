@@ -7,10 +7,8 @@
 //
 
 struct Inspection: Hashable, Decodable {
-    let id: String
-    let inspectionDate: String
+    let date: String
     let status: String
-    let inspectionType: String
     
     let infractions: [Infraction]
 }

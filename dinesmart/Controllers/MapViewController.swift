@@ -28,6 +28,7 @@ class MapViewController: UIViewController {
         static let DetailSegue = "toDetailView"
         static let InspectionSegue = "toInspectionView"
         static let CentreMeters: Double = 400
+        static let CentreOffset: CGFloat = 25
     }
     
     override func viewDidLoad() {
@@ -85,7 +86,7 @@ class MapViewController: UIViewController {
         
         centreButton.isUserInteractionEnabled = allowed
         if allowed {
-            centreButton.center = CGPoint(x: centreButton.center.x, y: centreButton.center.y + 25)
+            centreButton.center = CGPoint(x: centreButton.center.x, y: centreButton.center.y + Constants.CentreOffset)
         }
         
         loadingLabel.isHidden = allowed
@@ -122,6 +123,14 @@ class MapViewController: UIViewController {
 extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         clusteringManager.renderAnnotations(onMapView: inspectionMapView)
+    }
+    
+    func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
+        guard let userLocation = mapView.view(for: mapView.userLocation) else {
+            return
+        }
+        
+        userLocation.isEnabled = false
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
