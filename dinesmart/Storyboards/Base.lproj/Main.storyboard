@@ -189,7 +189,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="awR-do-3SB" userLabel="DataStack">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="awR-do-3SB" userLabel="DataStack">
                                 <rect key="frame" x="20" y="44" width="374" height="818"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBZ-4B-kOr" userLabel="BackButton">
@@ -208,7 +208,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KGm-DG-t7D" userLabel="OverviewStack">
-                                        <rect key="frame" x="0.0" y="43" width="374" height="120"/>
+                                        <rect key="frame" x="0.0" y="46" width="374" height="120"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6o6-7h-ne2" userLabel="NameLabel">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
@@ -248,9 +248,39 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0gH-tT-wxE">
-                                        <rect key="frame" x="0.0" y="163" width="374" height="655"/>
-                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wOC-YB-Z2T" userLabel="InspectionTable">
+                                        <rect key="frame" x="0.0" y="169" width="374" height="649"/>
+                                        <color key="backgroundColor" name="BackgroundColor"/>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InfractionCell" textLabel="mVw-DP-Qa8" detailTextLabel="cpl-3U-vIH" style="IBUITableViewCellStyleSubtitle" id="HYx-vi-vRK">
+                                                <rect key="frame" x="0.0" y="55.5" width="374" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HYx-vi-vRK" id="zBU-Sc-beA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mVw-DP-Qa8">
+                                                            <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cpl-3U-vIH">
+                                                            <rect key="frame" x="15" y="25.5" width="33" height="14.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" name="BackgroundColor"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <sections/>
+                                    </tableView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -266,6 +296,7 @@
                     <connections>
                         <outlet property="addressLabel" destination="8p3-uz-wMg" id="yys-Aq-j76"/>
                         <outlet property="dataSourceLabel" destination="Zm3-e8-r36" id="AnC-TO-coB"/>
+                        <outlet property="inspectionTableView" destination="wOC-YB-Z2T" id="RiL-kz-xQ8"/>
                         <outlet property="nameLabel" destination="6o6-7h-ne2" id="gP7-ni-Lfg"/>
                         <outlet property="typeLabel" destination="f8s-au-LEI" id="8GQ-dX-bog"/>
                     </connections>
