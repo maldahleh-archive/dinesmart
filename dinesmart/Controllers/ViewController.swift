@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     private struct Constants {
         static let ClusterAnnotationIdentifier = ClusterAnnotationView.identifier
         static let DetailSegue = "toDetailView"
+        static let InspectionSegue = "toInspectionView"
         static let CentreMeters: Double = 400
     }
     
@@ -91,16 +92,29 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destination = segue.destination as? DetailViewController else {
+        guard let identifier = segue.identifier else {
             return
         }
         
-        guard let selectedInspections = sender as? [InspectedLocation] else {
-            destination.inspectedLocations = Array(loadedInspections.values)
-            return
-        }
+        if identifier == Constants.DetailSegue {
+            guard let destination = segue.destination as? DetailViewController else {
+                return
+            }
         
-        destination.inspectedLocations = selectedInspections
+            guard let selectedInspections = sender as? [InspectedLocation] else {
+                destination.inspectedLocations = Array(loadedInspections.values)
+                return
+            }
+        
+            destination.inspectedLocations = selectedInspections
+        } else if identifier == Constants.InspectionSegue {
+            guard let destination = segue.destination as? InspectionViewController,
+                let location = sender as? InspectedLocation else {
+                    return
+            }
+            
+            destination.inspectedLocation = location
+        }
     }
 }
 
@@ -115,7 +129,16 @@ extension ViewController: MKMapViewDelegate {
             return
         }
         
-        let annotations = (annotation as? ClusterAnnotation)?.heldAnnotations ?? [annotation]
+        guard let annotations = (annotation as? ClusterAnnotation)?.heldAnnotations else {
+            guard let pointAnnotation = annotation as? MKPointAnnotation,
+                let location = self.loadedInspections[pointAnnotation] else {
+                    return
+            }
+            
+            performSegue(withIdentifier: Constants.InspectionSegue, sender: location)
+            return
+        }
+        
         let inspections: [InspectedLocation] = annotations.compactMap { [weak self] annotation in
             guard let self = self,
                 let pointAnnotation = annotation as? MKPointAnnotation,

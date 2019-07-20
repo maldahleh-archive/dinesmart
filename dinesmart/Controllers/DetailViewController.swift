@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
     
     private struct Constants {
         static let ReuseIdentifier = "InspectionCell"
+        static let InspectionSegue = "toInspectionView"
     }
 
     override func viewDidLoad() {
@@ -24,6 +25,7 @@ class DetailViewController: UIViewController {
         self.hidesKeyboardOnTap()
         
         inspectionsTable.dataSource = self
+        inspectionsTable.delegate = self
         searchBar.delegate = self
         
         filteredLocations = inspectedLocations
@@ -31,6 +33,28 @@ class DetailViewController: UIViewController {
     
     @IBAction func dismissControllerTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension DetailViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let selectedLocation = filteredLocations.safeGet(index: indexPath.row) else {
+            return
+        }
+        
+        performSegue(withIdentifier: Constants.InspectionSegue, sender: selectedLocation)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier,
+            let destination = segue.destination as? InspectionViewController,
+            let location = sender as? InspectedLocation,
+            identifier == Constants.InspectionSegue else {
+                return
+        }
+        
+        destination.inspectedLocation = location
     }
 }
 

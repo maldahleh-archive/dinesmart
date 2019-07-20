@@ -31,6 +31,7 @@
 		671D811022D6762700121E1B /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D810F22D6762700121E1B /* UIViewController+Alerts.swift */; };
 		67762F1B22E24FA100A0A932 /* Collection+SafeLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67762F1A22E24FA100A0A932 /* Collection+SafeLookup.swift */; };
 		67762F1D22E268D900A0A932 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67762F1C22E268D900A0A932 /* UIViewController+Keyboard.swift */; };
+		67762F1F22E2998500A0A932 /* InspectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67762F1E22E2998500A0A932 /* InspectionViewController.swift */; };
 		67AB782122B4A62900C8F5C2 /* MKMapView+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB782022B4A62900C8F5C2 /* MKMapView+Center.swift */; };
 		67B3871422DE5BAA0064155C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B3871322DE5BAA0064155C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,7 @@
 		671D810F22D6762700121E1B /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		67762F1A22E24FA100A0A932 /* Collection+SafeLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeLookup.swift"; sourceTree = "<group>"; };
 		67762F1C22E268D900A0A932 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		67762F1E22E2998500A0A932 /* InspectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewController.swift; sourceTree = "<group>"; };
 		67AB782022B4A62900C8F5C2 /* MKMapView+Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Center.swift"; sourceTree = "<group>"; };
 		67B3871322DE5BAA0064155C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		67FE043122D6E46400155DA6 /* PinFloyd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PinFloyd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -288,6 +290,7 @@
 			children = (
 				6708819922A76E0A0012DD3D /* ViewController.swift */,
 				67B3871322DE5BAA0064155C /* DetailViewController.swift */,
+				67762F1E22E2998500A0A932 /* InspectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				670881A022A76E0A0012DD3D /* dinesmart.xcdatamodeld in Sources */,
 				6708819A22A76E0A0012DD3D /* ViewController.swift in Sources */,
 				670881DE22A83C8F0012DD3D /* Coordinate.swift in Sources */,
+				67762F1F22E2998500A0A932 /* InspectionViewController.swift in Sources */,
 				670881D622A836AD0012DD3D /* InspectionClient.swift in Sources */,
 				67762F1D22E268D900A0A932 /* UIViewController+Keyboard.swift in Sources */,
 				670881E122A83CCC0012DD3D /* Inspection.swift in Sources */,
