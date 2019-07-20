@@ -12,13 +12,15 @@ class InspectionViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
-    @IBOutlet weak var dataSourceLabel: UILabel!
     @IBOutlet weak var inspectionTableView: UITableView!
     
     var inspectedLocation: InspectedLocation!
     
     private struct Constants {
         static let CellIdentifier = "InfractionCell"
+        
+        static let NoViolations = "No Violations"
+        static let Severity = "Severity:"
     }
     
     override func viewDidLoad() {
@@ -28,7 +30,6 @@ class InspectionViewController: UIViewController {
         nameLabel.text = inspectedLocation.name
         typeLabel.text = inspectedLocation.type
         addressLabel.text = inspectedLocation.address
-        dataSourceLabel.text = "Source: "
     }
     
     @IBAction func dismissButtonTapped(_ sender: Any) {
@@ -70,14 +71,14 @@ extension InspectionViewController: UITableViewDataSource {
         }
         
         guard let infraction = inspection.infractions.safeGet(index: indexPath.row) else {
-            mainLabel.text = "No Violations"
+            mainLabel.text = Constants.NoViolations
             secondaryLabel.text = ""
             
             return cell
         }
         
         mainLabel.text = infraction.details
-        secondaryLabel.text = "Severity: \(infraction.severity)"
+        secondaryLabel.text = "\(Constants.Severity) \(infraction.severity)"
         
         return cell
     }
