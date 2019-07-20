@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-dinesmart/Pods-dinesmart-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/PinFloyd/PinFloyd.framework
+${BUILT_PRODUCTS_DIR}/Sentry/Sentry.framework
