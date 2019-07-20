@@ -144,6 +144,7 @@ extension MapViewController: MKMapViewDelegate {
                     return
             }
             
+            mapView.deselectAnnotation(pointAnnotation, animated: false)
             performSegue(withIdentifier: Constants.InspectionSegue, sender: location)
             return
         }
