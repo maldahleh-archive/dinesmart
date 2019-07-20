@@ -67,6 +67,7 @@ extension InspectionViewController: UITableViewDataSource {
         
         mainLabel.text = infraction.infractionDetails
         secondaryLabel.text = "Severity: \(infraction.severity)"
+        
         return cell
     }
 }

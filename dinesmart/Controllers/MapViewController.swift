@@ -11,7 +11,7 @@ import PinFloyd
 import MapKit
 import UIKit
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
     @IBOutlet weak var inspectionMapView: MKMapView!
     @IBOutlet weak var loadingLabel: UILabel!
     @IBOutlet weak var centreButton: UIButton!
@@ -119,7 +119,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: - MKMapViewDelegate
-extension ViewController: MKMapViewDelegate {
+extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         clusteringManager.renderAnnotations(onMapView: inspectionMapView)
     }
