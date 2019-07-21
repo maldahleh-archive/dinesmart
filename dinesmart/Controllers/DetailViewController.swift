@@ -81,7 +81,7 @@ extension DetailViewController: UITableViewDataSource {
     }
 }
 
-// MARKL - UISearchBarDelegate
+// MARK - UISearchBarDelegate
 extension DetailViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty || searchText == "" {

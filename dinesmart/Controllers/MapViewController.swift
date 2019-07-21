@@ -20,7 +20,7 @@ class MapViewController: UIViewController {
     var loadedInspections: [MKPointAnnotation: InspectedLocation] = [:]
     
     var locationManager: CLLocationManager!
-    let client = InspectionClient()
+    let apiClient = InspectionClient()
     let clusteringManager = ClusteringManager()
     
     private struct Constants {
@@ -43,7 +43,7 @@ class MapViewController: UIViewController {
                 centreButton.isHidden = true
         }
 
-        client.inspections { [weak self] result in
+        apiClient.inspections { [weak self] result in
             guard let self = self else {
                 return
             }
@@ -144,7 +144,7 @@ extension MapViewController: MKMapViewDelegate {
             return
         }
         
-        let inspections: [InspectedLocation] = annotations.compactMap { [weak self] annotation in
+        performSegue(withIdentifier: Constants.DetailSegue, sender: annotations.compactMap { [weak self] annotation in
             guard let self = self,
                 let pointAnnotation = annotation as? MKPointAnnotation,
                 let location = self.loadedInspections[pointAnnotation] else {
@@ -152,9 +152,7 @@ extension MapViewController: MKMapViewDelegate {
             }
             
             return location
-        }
-        
-        performSegue(withIdentifier: Constants.DetailSegue, sender: inspections)
+        } as [InspectedLocation])
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
