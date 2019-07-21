@@ -28,13 +28,13 @@ class MapViewController: UIViewController {
         static let DetailSegue = "toDetailView"
         static let InspectionSegue = "toInspectionView"
         static let CentreMeters: Double = 400
-        static let CentreOffset: CGFloat = 25
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setInteractionAllowed(to: false)
         
+        locationManager.delegate = self
         inspectionMapView.delegate = self
         inspectionMapView.center()
         
@@ -42,8 +42,7 @@ class MapViewController: UIViewController {
             || CLLocationManager.authorizationStatus() != .authorizedWhenInUse {
                 centreButton.isHidden = true
         }
-        
-        // TODO: WIP
+
         client.inspections { [weak self] result in
             guard let self = self else {
                 return
@@ -83,11 +82,7 @@ class MapViewController: UIViewController {
     func setInteractionAllowed(to allowed: Bool) {
         inspectionMapView.isUserInteractionEnabled = allowed
         searchButton.isUserInteractionEnabled = allowed
-        
         centreButton.isUserInteractionEnabled = allowed
-        if allowed {
-            centreButton.center = CGPoint(x: centreButton.center.x, y: centreButton.center.y + Constants.CentreOffset)
-        }
         
         loadingLabel.isHidden = allowed
     }
@@ -175,5 +170,12 @@ extension MapViewController: MKMapViewDelegate {
         }
         
         return clusterView
+    }
+}
+
+// MARK: - CLLocationManagerDelegate
+extension MapViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        centreButton.isHidden = status != .authorizedWhenInUse && status != .authorizedAlways
     }
 }

@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uI-GC-f6D" userLabel="CentreButton">
-                                <rect key="frame" x="20" y="794" width="20" height="20"/>
+                                <rect key="frame" x="20" y="822" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="An3-j4-jEk"/>
                                     <constraint firstAttribute="width" constant="20" id="Kua-7C-m5a"/>
@@ -68,7 +68,7 @@
                             <constraint firstItem="zzW-01-z2g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1cg-ZL-vEV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dq1-qK-keo" secondAttribute="trailing" id="GWw-2I-5Qv"/>
                             <constraint firstItem="Dq1-qK-keo" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Icr-wS-7gF"/>
-                            <constraint firstItem="Dq1-qK-keo" firstAttribute="top" secondItem="6uI-GC-f6D" secondAttribute="bottom" constant="8" id="JLL-NS-Ghv"/>
+                            <constraint firstItem="Dq1-qK-keo" firstAttribute="top" secondItem="6uI-GC-f6D" secondAttribute="bottom" constant="-20" id="JLL-NS-Ghv"/>
                             <constraint firstAttribute="bottom" secondItem="zzW-01-z2g" secondAttribute="bottom" id="VhI-hy-5s5"/>
                             <constraint firstItem="zzW-01-z2g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aBd-nY-a1Y"/>
                             <constraint firstItem="2Wo-nX-npN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="hmi-YM-6y4"/>
@@ -240,7 +240,7 @@
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wOC-YB-Z2T" userLabel="InspectionTable">
-                                        <rect key="frame" x="0.0" y="139" width="374" height="679"/>
+                                        <rect key="frame" x="0.0" y="139" width="374" height="640"/>
                                         <color key="backgroundColor" name="BackgroundColor"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <prototypes>
@@ -272,6 +272,16 @@
                                         </prototypes>
                                         <sections/>
                                     </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data is retrieved from the regional public health agency" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjr-5Y-7Jd" userLabel="SourceLabel">
+                                        <rect key="frame" x="0.0" y="782" width="374" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="41" id="do9-w7-k2Z"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="kIE-AS-0wO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" name="TextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>

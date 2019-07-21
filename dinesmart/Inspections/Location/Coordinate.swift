@@ -11,7 +11,10 @@ import MapKit
 struct Coordinate: Hashable, Decodable {
     let lat: String
     let lon: String
-    
+}
+
+// MARK: - Mapping
+extension Coordinate {
     func asCLLocationCoordinate() -> CLLocationCoordinate2D? {
         guard let lat = Double(lat), let long = Double(lon) else {
             return nil

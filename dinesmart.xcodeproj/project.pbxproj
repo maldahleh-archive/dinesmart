@@ -13,7 +13,6 @@
 		6708819822A76E0A0012DD3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708819722A76E0A0012DD3D /* AppDelegate.swift */; };
 		6708819A22A76E0A0012DD3D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708819922A76E0A0012DD3D /* MapViewController.swift */; };
 		6708819D22A76E0A0012DD3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6708819B22A76E0A0012DD3D /* Main.storyboard */; };
-		670881A022A76E0A0012DD3D /* dinesmart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6708819E22A76E0A0012DD3D /* dinesmart.xcdatamodeld */; };
 		670881A222A76E0B0012DD3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670881A122A76E0B0012DD3D /* Assets.xcassets */; };
 		670881A522A76E0B0012DD3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670881A322A76E0B0012DD3D /* LaunchScreen.storyboard */; };
 		670881B022A76E0B0012DD3D /* dinesmartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670881AF22A76E0B0012DD3D /* dinesmartTests.swift */; };
@@ -61,7 +60,6 @@
 		6708819722A76E0A0012DD3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6708819922A76E0A0012DD3D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6708819C22A76E0A0012DD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6708819F22A76E0A0012DD3D /* dinesmart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dinesmart.xcdatamodel; sourceTree = "<group>"; };
 		670881A122A76E0B0012DD3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		670881A422A76E0B0012DD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		670881A622A76E0B0012DD3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 				6708819722A76E0A0012DD3D /* AppDelegate.swift */,
 				670881A122A76E0B0012DD3D /* Assets.xcassets */,
 				670881A622A76E0B0012DD3D /* Info.plist */,
-				6708819E22A76E0A0012DD3D /* dinesmart.xcdatamodeld */,
 			);
 			path = dinesmart;
 			sourceTree = "<group>";
@@ -533,7 +530,6 @@
 				670881D022A836540012DD3D /* Result.swift in Sources */,
 				670881DB22A83BD90012DD3D /* InspectedLocation.swift in Sources */,
 				67AB782122B4A62900C8F5C2 /* MKMapView+Center.swift in Sources */,
-				670881A022A76E0A0012DD3D /* dinesmart.xcdatamodeld in Sources */,
 				6708819A22A76E0A0012DD3D /* MapViewController.swift in Sources */,
 				670881DE22A83C8F0012DD3D /* Coordinate.swift in Sources */,
 				67762F1F22E2998500A0A932 /* InspectionViewController.swift in Sources */,
@@ -885,19 +881,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		6708819E22A76E0A0012DD3D /* dinesmart.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6708819F22A76E0A0012DD3D /* dinesmart.xcdatamodel */,
-			);
-			currentVersion = 6708819F22A76E0A0012DD3D /* dinesmart.xcdatamodel */;
-			path = dinesmart.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 6708818C22A76E0A0012DD3D /* Project object */;
 }

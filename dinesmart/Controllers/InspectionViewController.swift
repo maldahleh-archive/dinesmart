@@ -17,6 +17,9 @@ class InspectionViewController: UIViewController {
     var inspectedLocation: InspectedLocation!
     
     private struct Constants {
+        static let SmallView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 0.0,
+            height: Double(Float.leastNormalMagnitude)))
+        
         static let CellIdentifier = "InfractionCell"
         
         static let NoViolations = "No Violations"
@@ -25,7 +28,12 @@ class InspectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         inspectionTableView.dataSource = self
+        inspectionTableView.tableHeaderView = Constants.SmallView
+        inspectionTableView.tableFooterView = Constants.SmallView
+        inspectionTableView.sectionHeaderHeight = 0
+        inspectionTableView.sectionFooterHeight = 0
         
         nameLabel.text = inspectedLocation.name
         typeLabel.text = inspectedLocation.type
