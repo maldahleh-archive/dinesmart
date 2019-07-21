@@ -27,7 +27,7 @@ class MapViewController: UIViewController {
         static let ClusterAnnotationIdentifier = ClusterAnnotationView.identifier
         static let DetailSegue = "toDetailView"
         static let InspectionSegue = "toInspectionView"
-        static let CentreMeters: Double = 400
+        static let CentreMeters = 400.0
     }
     
     override func viewDidLoad() {
@@ -37,30 +37,8 @@ class MapViewController: UIViewController {
         
         inspectionMapView.delegate = self
         inspectionMapView.center()
-
-        apiClient.inspections { [weak self] result in
-            guard let self = self else {
-                return
-            }
-            
-            self.setInteractionAllowed(to: true)
-            
-            switch result {
-            case .success(let inspections):
-                self.clusteringManager.add(annotations: inspections.compactMap { inspection in
-                    guard let annotation = inspection.asAnnotation() else {
-                        return nil
-                    }
-                    
-                    self.loadedInspections[annotation] = inspection
-                    return annotation
-                })
-                
-                self.clusteringManager.renderAnnotations(onMapView: self.inspectionMapView)
-            case .failure:
-                self.presentGenericError()
-            }
-        }
+        
+        updateInspections()
     }
     
     @IBAction func centreButtonTapped(_ sender: Any) {
@@ -105,6 +83,54 @@ class MapViewController: UIViewController {
             }
             
             destination.inspectedLocation = location
+        }
+    }
+}
+
+// MARK: - Networking
+extension MapViewController {
+    typealias InspectionsCompletionHandler = ([InspectedLocation]?) -> Void
+    
+    private func retrieveInspections(_ completion: @escaping InspectionsCompletionHandler) {
+        apiClient.inspections { result in
+            switch result {
+            case .success(let inspections):
+                completion(inspections)
+            case .failure:
+                completion(nil)
+            }
+        }
+    }
+    
+    private func updateInspections() {
+        retrieveInspections { [weak self] inspections in
+            guard let self = self else {
+                return
+            }
+            
+            guard let inspections = inspections else {
+                self.presentAPIError { [weak self] _ in
+                    guard let self = self else {
+                        return
+                    }
+                    
+                    self.updateInspections()
+                }
+                
+                return
+            }
+            
+            self.setInteractionAllowed(to: true)
+            self.clusteringManager.add(annotations: inspections.compactMap { inspection in
+                guard let annotation = inspection.asAnnotation() else {
+                    return nil
+                }
+                
+                self.loadedInspections[annotation] = inspection
+                return annotation
+            })
+            
+            self.clusteringManager.renderAnnotations(onMapView: self.inspectionMapView)
         }
     }
 }
