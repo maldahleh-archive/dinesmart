@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreLocation
 import Sentry
 
 @UIApplicationMain
@@ -18,14 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Client.shared = try? Client(dsn: "https://2dd1b49d5c8c400aaa60e9f2c86214a8@sentry.io/1509662")
         try? Client.shared?.startCrashHandler()
         
-        let locationManager = CLLocationManager()
-        locationManager.requestWhenInUseAuthorization()
-        
-        guard let rootVC = window?.rootViewController as? MapViewController else {
-            return true
-        }
-        
-        rootVC.locationManager = locationManager
         return true
     }
 }

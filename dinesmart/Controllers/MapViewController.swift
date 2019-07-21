@@ -19,9 +19,9 @@ class MapViewController: UIViewController {
     
     var loadedInspections: [MKPointAnnotation: InspectedLocation] = [:]
     
-    var locationManager: CLLocationManager!
     let apiClient = InspectionClient()
     let clusteringManager = ClusteringManager()
+    let locationManager = CLLocationManager()
     
     private struct Constants {
         static let ClusterAnnotationIdentifier = ClusterAnnotationView.identifier
@@ -32,16 +32,11 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLocationServices()
         setInteractionAllowed(to: false)
         
-        locationManager.delegate = self
         inspectionMapView.delegate = self
         inspectionMapView.center()
-        
-        if !CLLocationManager.locationServicesEnabled()
-            || CLLocationManager.authorizationStatus() != .authorizedWhenInUse {
-                centreButton.isHidden = true
-        }
 
         apiClient.inspections { [weak self] result in
             guard let self = self else {
@@ -63,7 +58,7 @@ class MapViewController: UIViewController {
                 
                 self.clusteringManager.renderAnnotations(onMapView: self.inspectionMapView)
             case .failure:
-                self.presentAlertWith(message: "API Request Failed")
+                self.presentGenericError()
             }
         }
     }
@@ -171,9 +166,25 @@ extension MapViewController: MKMapViewDelegate {
     }
 }
 
+// MARK: - Location
+extension MapViewController {
+    private func setupLocationServices() {
+        locationManager.delegate = self
+        
+        switch CLLocationManager.authorizationStatus() {
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        case .restricted, .denied:
+            centreButton.isHidden = true
+        default:
+            break
+        }
+    }
+}
+
 // MARK: - CLLocationManagerDelegate
 extension MapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        centreButton.isHidden = status != .authorizedWhenInUse && status != .authorizedAlways
+        centreButton.isHidden = status != .authorizedWhenInUse
     }
 }
