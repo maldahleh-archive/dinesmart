@@ -28,6 +28,7 @@
 		670881E122A83CCC0012DD3D /* Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670881E022A83CCC0012DD3D /* Inspection.swift */; };
 		670881E422A83D000012DD3D /* Infraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670881E322A83D000012DD3D /* Infraction.swift */; };
 		671D811022D6762700121E1B /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D810F22D6762700121E1B /* UIViewController+Alerts.swift */; };
+		674D52C122F9B209003B0B3C /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674D52C022F9B209003B0B3C /* PersistenceService.swift */; };
 		67762F1B22E24FA100A0A932 /* Collection+SafeLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67762F1A22E24FA100A0A932 /* Collection+SafeLookup.swift */; };
 		67762F1D22E268D900A0A932 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67762F1C22E268D900A0A932 /* UIViewController+Keyboard.swift */; };
 		67762F1F22E2998500A0A932 /* InspectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67762F1E22E2998500A0A932 /* InspectionViewController.swift */; };
@@ -80,6 +81,7 @@
 		670881E022A83CCC0012DD3D /* Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspection.swift; sourceTree = "<group>"; };
 		670881E322A83D000012DD3D /* Infraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infraction.swift; sourceTree = "<group>"; };
 		671D810F22D6762700121E1B /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		674D52C022F9B209003B0B3C /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		67762F1A22E24FA100A0A932 /* Collection+SafeLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeLookup.swift"; sourceTree = "<group>"; };
 		67762F1C22E268D900A0A932 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
 		67762F1E22E2998500A0A932 /* InspectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				67B3871222DE5B890064155C /* Controllers */,
 				670881C922A835D10012DD3D /* Networking */,
+				674D52BF22F9B1F3003B0B3C /* Persistence */,
 				670881D922A83A840012DD3D /* Inspections */,
 				670881C822A81B200012DD3D /* Storyboards */,
 				67AB781F22B4A60C00C8F5C2 /* Extensions */,
@@ -269,6 +272,14 @@
 				670881E322A83D000012DD3D /* Infraction.swift */,
 			);
 			path = Infraction;
+			sourceTree = "<group>";
+		};
+		674D52BF22F9B1F3003B0B3C /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				674D52C022F9B209003B0B3C /* PersistenceService.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 		67AB781F22B4A60C00C8F5C2 /* Extensions */ = {
@@ -535,6 +546,7 @@
 				67762F1F22E2998500A0A932 /* InspectionViewController.swift in Sources */,
 				670881D622A836AD0012DD3D /* InspectionClient.swift in Sources */,
 				67762F1D22E268D900A0A932 /* UIViewController+Keyboard.swift in Sources */,
+				674D52C122F9B209003B0B3C /* PersistenceService.swift in Sources */,
 				670881E122A83CCC0012DD3D /* Inspection.swift in Sources */,
 				671D811022D6762700121E1B /* UIViewController+Alerts.swift in Sources */,
 				670881D822A836E50012DD3D /* InspectionEndpoint.swift in Sources */,
