@@ -22,7 +22,6 @@ class MapViewController: UIViewController {
     let apiClient = InspectionClient()
     let clusteringManager = ClusteringManager()
     let locationManager = CLLocationManager()
-    let persistence = PersistenceService()
     
     private struct Constants {
         static let ClusterAnnotationIdentifier = ClusterAnnotationView.identifier
