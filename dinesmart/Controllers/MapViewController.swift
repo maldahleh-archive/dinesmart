@@ -9,6 +9,7 @@
 import CoreLocation
 import PinFloyd
 import MapKit
+import RealmSwift
 import UIKit
 
 class MapViewController: UIViewController {
@@ -22,6 +23,7 @@ class MapViewController: UIViewController {
     let apiClient = InspectionClient()
     let clusteringManager = ClusteringManager()
     let locationManager = CLLocationManager()
+    let realm = try? Realm()
     
     private struct Constants {
         static let ClusterAnnotationIdentifier = ClusterAnnotationView.identifier
@@ -38,7 +40,7 @@ class MapViewController: UIViewController {
         inspectionMapView.delegate = self
         inspectionMapView.center()
         
-        updateInspections()
+        loadInspections()
     }
     
     @IBAction func centreButtonTapped(_ sender: Any) {
@@ -102,7 +104,22 @@ extension MapViewController {
         }
     }
     
-    private func updateInspections() {
+    private func loadInspections() {
+        guard let realm = realm else {
+            downloadInspections()
+            return
+        }
+        
+        let inspections = realm.objects(InspectedLocation.self)
+        if inspections.count == 0 {
+            downloadInspections()
+            return
+        }
+        
+        displayInspections(Array(inspections))
+    }
+    
+    private func downloadInspections() {
         retrieveInspections { [weak self] inspections in
             guard let self = self else {
                 return
@@ -114,24 +131,38 @@ extension MapViewController {
                         return
                     }
                     
-                    self.updateInspections()
+                    self.downloadInspections()
                 }
                 
                 return
             }
             
-            self.setInteractionAllowed(to: true)
-            self.clusteringManager.add(annotations: inspections.compactMap { inspection in
-                guard let annotation = inspection.asAnnotation() else {
-                    return nil
-                }
-                
-                self.loadedInspections[annotation] = inspection
-                return annotation
-            })
+            self.displayInspections(inspections)
             
-            self.clusteringManager.renderAnnotations(onMapView: self.inspectionMapView)
+            guard let realm = self.realm else {
+                return
+            }
+            
+            try? realm.write {
+                inspections.forEach { inspection in
+                    realm.add(inspection)
+                }
+            }
         }
+    }
+    
+    private func displayInspections(_ inspections: [InspectedLocation]) {
+        setInteractionAllowed(to: true)
+        clusteringManager.add(annotations: inspections.compactMap { inspection in
+            guard let annotation = inspection.asAnnotation() else {
+                return nil
+            }
+            
+            loadedInspections[annotation] = inspection
+            return annotation
+        })
+        
+        clusteringManager.renderAnnotations(onMapView: inspectionMapView)
     }
 }
 
