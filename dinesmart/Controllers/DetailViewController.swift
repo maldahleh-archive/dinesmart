@@ -6,11 +6,13 @@
 //  Copyright © 2019 Codeovo Software Ltd. All rights reserved.
 //
 
+import GoogleMobileAds
 import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var inspectionsTable: UITableView!
+    @IBOutlet weak var adView: GADBannerView!
     
     var inspectedLocations = [InspectedLocation]()
     var filteredLocations = [InspectedLocation]()
@@ -29,6 +31,10 @@ class DetailViewController: UIViewController {
         searchBar.delegate = self
         
         filteredLocations = inspectedLocations
+        
+        adView.rootViewController = self
+        adView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        adView.load(GADRequest())
     }
     
     @IBAction func dismissControllerTapped(_ sender: Any) {

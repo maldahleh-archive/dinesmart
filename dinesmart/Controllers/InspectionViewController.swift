@@ -6,6 +6,7 @@
 //  Copyright © 2019 Codeovo Software Ltd. All rights reserved.
 //
 
+import GoogleMobileAds
 import UIKit
 
 class InspectionViewController: UIViewController {
@@ -13,6 +14,7 @@ class InspectionViewController: UIViewController {
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var inspectionTableView: UITableView!
+    @IBOutlet weak var adView: GADBannerView!
     
     var inspectedLocation: InspectedLocation!
     
@@ -38,6 +40,10 @@ class InspectionViewController: UIViewController {
         nameLabel.text = inspectedLocation.name
         typeLabel.text = inspectedLocation.type
         addressLabel.text = inspectedLocation.address
+        
+        adView.rootViewController = self
+        adView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        adView.load(GADRequest())
     }
     
     @IBAction func dismissButtonTapped(_ sender: Any) {
