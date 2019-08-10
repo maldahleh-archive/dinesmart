@@ -42,7 +42,8 @@ class InspectionViewController: UIViewController {
         addressLabel.text = inspectedLocation.address
         
         adView.rootViewController = self
-        adView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        adView.adSize = kGADAdSizeBanner
+        adView.adUnitID = "ca-app-pub-8516405525746627/1578111330"
         adView.load(GADRequest())
     }
     

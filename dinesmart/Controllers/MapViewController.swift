@@ -17,6 +17,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var loadingLabel: UILabel!
     @IBOutlet weak var centreButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var refreshButton: UIButton!
     
     var loadedInspections: [MKPointAnnotation: InspectedLocation] = [:]
     
@@ -54,10 +55,27 @@ class MapViewController: UIViewController {
         performSegue(withIdentifier: Constants.DetailSegue, sender: nil)
     }
     
+    @IBAction func refreshButtonTapped(_ sender: Any) {
+        setInteractionAllowed(to: false)
+        loadedInspections = [:]
+        
+        if let realm = realm {
+            try? realm.write {
+                realm.deleteAll()
+            }
+        }
+        
+        clusteringManager.removeAll()
+        clusteringManager.renderAnnotations(onMapView: inspectionMapView)
+        
+        downloadInspections()
+    }
+    
     func setInteractionAllowed(to allowed: Bool) {
         inspectionMapView.isUserInteractionEnabled = allowed
         searchButton.isUserInteractionEnabled = allowed
         centreButton.isUserInteractionEnabled = allowed
+        refreshButton.isUserInteractionEnabled = allowed
         
         loadingLabel.isHidden = allowed
     }

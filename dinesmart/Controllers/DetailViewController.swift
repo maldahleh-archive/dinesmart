@@ -33,7 +33,8 @@ class DetailViewController: UIViewController {
         filteredLocations = inspectedLocations
         
         adView.rootViewController = self
-        adView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        adView.adSize = kGADAdSizeBanner
+        adView.adUnitID = "ca-app-pub-8516405525746627/9140906583"
         adView.load(GADRequest())
     }
     
