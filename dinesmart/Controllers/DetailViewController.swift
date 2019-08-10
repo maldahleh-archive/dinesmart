@@ -82,6 +82,7 @@ extension DetailViewController: UITableViewDataSource {
         }
         
         mainLabel.text = inspection.name
+        mainLabel.numberOfLines = 0
         secondaryLabel.text = inspection.address
 
         return cell
