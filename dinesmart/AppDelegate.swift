@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  dinesmart
-//
-//  Created by Mohammed Al-Dahleh on 2019-06-04.
-//  Copyright © 2019 Codeovo Software Ltd. All rights reserved.
-//
-
 import UIKit
 import GoogleMobileAds
 import Sentry
