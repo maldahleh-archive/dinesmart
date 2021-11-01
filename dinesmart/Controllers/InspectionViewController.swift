@@ -1,12 +1,3 @@
-//
-//  InspectionViewController.swift
-//  dinesmart
-//
-//  Created by Mohammed Al-Dahleh on 2019-07-19.
-//  Copyright © 2019 Codeovo Software Ltd. All rights reserved.
-//
-
-import GoogleMobileAds
 import UIKit
 
 class InspectionViewController: UIViewController {
@@ -14,7 +5,6 @@ class InspectionViewController: UIViewController {
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var inspectionTableView: UITableView!
-    @IBOutlet weak var adView: GADBannerView!
     
     var inspectedLocation: InspectedLocation!
     
@@ -40,11 +30,6 @@ class InspectionViewController: UIViewController {
         nameLabel.text = inspectedLocation.name
         typeLabel.text = inspectedLocation.type
         addressLabel.text = inspectedLocation.address
-        
-        adView.rootViewController = self
-        adView.adSize = kGADAdSizeBanner
-        adView.adUnitID = "ca-app-pub-8516405525746627/1578111330"
-        adView.load(GADRequest())
     }
     
     @IBAction func dismissButtonTapped(_ sender: Any) {

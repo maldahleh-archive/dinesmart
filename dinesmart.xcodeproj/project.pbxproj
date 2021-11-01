@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		421393A664202B26CB367C4F /* Pods_dinesmartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EBD339DF2AB48DD9BD6F3C5 /* Pods_dinesmartTests.framework */; };
-		44906FAE709914296373579E /* Pods_dinesmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7540A30F98FDE035D69F48A /* Pods_dinesmart.framework */; };
-		5CCB2615ABCC2EA19196AD16 /* Pods_dinesmartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2488401B8EC01D1E8D6791 /* Pods_dinesmartUITests.framework */; };
+		4A0D01B5273022C90003B030 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 4A0D01B4273022C90003B030 /* Sentry */; };
+		4A0D01B8273022FC0003B030 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4A0D01B7273022FC0003B030 /* Realm */; };
+		4A0D01BA273022FC0003B030 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4A0D01B9273022FC0003B030 /* RealmSwift */; };
 		6708819822A76E0A0012DD3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708819722A76E0A0012DD3D /* AppDelegate.swift */; };
 		6708819A22A76E0A0012DD3D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708819922A76E0A0012DD3D /* MapViewController.swift */; };
 		6708819D22A76E0A0012DD3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6708819B22A76E0A0012DD3D /* Main.storyboard */; };
@@ -53,9 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EBD339DF2AB48DD9BD6F3C5 /* Pods_dinesmartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dinesmartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22BCB3FABD6DC5189BEE8301 /* Pods-dinesmartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinesmartTests.release.xcconfig"; path = "Target Support Files/Pods-dinesmartTests/Pods-dinesmartTests.release.xcconfig"; sourceTree = "<group>"; };
-		5407A6C78CE64A591CCABB8A /* Pods-dinesmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinesmart.release.xcconfig"; path = "Target Support Files/Pods-dinesmart/Pods-dinesmart.release.xcconfig"; sourceTree = "<group>"; };
 		6708819422A76E0A0012DD3D /* dinesmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dinesmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6708819722A76E0A0012DD3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6708819922A76E0A0012DD3D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -86,12 +83,6 @@
 		67AB782022B4A62900C8F5C2 /* MKMapView+Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Center.swift"; sourceTree = "<group>"; };
 		67B3871322DE5BAA0064155C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		67FE043122D6E46400155DA6 /* PinFloyd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PinFloyd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70B94CE0F6D72E31F7888CC1 /* Pods-dinesmartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinesmartTests.debug.xcconfig"; path = "Target Support Files/Pods-dinesmartTests/Pods-dinesmartTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7A2488401B8EC01D1E8D6791 /* Pods_dinesmartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dinesmartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D106778D768E8927F089774 /* Pods-dinesmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinesmart.debug.xcconfig"; path = "Target Support Files/Pods-dinesmart/Pods-dinesmart.debug.xcconfig"; sourceTree = "<group>"; };
-		83660EE99125FA917B3C5613 /* Pods-dinesmartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinesmartUITests.release.xcconfig"; path = "Target Support Files/Pods-dinesmartUITests/Pods-dinesmartUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B7540A30F98FDE035D69F48A /* Pods_dinesmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dinesmart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFA12BD0242D80FCC5CFF484 /* Pods-dinesmartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinesmartUITests.debug.xcconfig"; path = "Target Support Files/Pods-dinesmartUITests/Pods-dinesmartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44906FAE709914296373579E /* Pods_dinesmart.framework in Frameworks */,
+				4A0D01BA273022FC0003B030 /* RealmSwift in Frameworks */,
+				4A0D01B8273022FC0003B030 /* Realm in Frameworks */,
+				4A0D01B5273022C90003B030 /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421393A664202B26CB367C4F /* Pods_dinesmartTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,26 +107,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CCB2615ABCC2EA19196AD16 /* Pods_dinesmartUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		58E259E1C7EC4770CC971F9A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7D106778D768E8927F089774 /* Pods-dinesmart.debug.xcconfig */,
-				5407A6C78CE64A591CCABB8A /* Pods-dinesmart.release.xcconfig */,
-				70B94CE0F6D72E31F7888CC1 /* Pods-dinesmartTests.debug.xcconfig */,
-				22BCB3FABD6DC5189BEE8301 /* Pods-dinesmartTests.release.xcconfig */,
-				FFA12BD0242D80FCC5CFF484 /* Pods-dinesmartUITests.debug.xcconfig */,
-				83660EE99125FA917B3C5613 /* Pods-dinesmartUITests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		6708818B22A76E0A0012DD3D = {
 			isa = PBXGroup;
 			children = (
@@ -142,7 +120,6 @@
 				670881AE22A76E0B0012DD3D /* dinesmartTests */,
 				670881B922A76E0B0012DD3D /* dinesmartUITests */,
 				6708819522A76E0A0012DD3D /* Products */,
-				58E259E1C7EC4770CC971F9A /* Pods */,
 				F16704A693942AD7E2680057 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -296,9 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				67FE043122D6E46400155DA6 /* PinFloyd.framework */,
-				B7540A30F98FDE035D69F48A /* Pods_dinesmart.framework */,
-				0EBD339DF2AB48DD9BD6F3C5 /* Pods_dinesmartTests.framework */,
-				7A2488401B8EC01D1E8D6791 /* Pods_dinesmartUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -310,17 +284,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 670881BF22A76E0B0012DD3D /* Build configuration list for PBXNativeTarget "dinesmart" */;
 			buildPhases = (
-				413CE9B7F742C2D1833EAB1B /* [CP] Check Pods Manifest.lock */,
 				6708819022A76E0A0012DD3D /* Sources */,
 				6708819122A76E0A0012DD3D /* Frameworks */,
 				6708819222A76E0A0012DD3D /* Resources */,
-				FFD832817F528C777871AC97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = dinesmart;
+			packageProductDependencies = (
+				4A0D01B4273022C90003B030 /* Sentry */,
+				4A0D01B7273022FC0003B030 /* Realm */,
+				4A0D01B9273022FC0003B030 /* RealmSwift */,
+			);
 			productName = dinesmart;
 			productReference = 6708819422A76E0A0012DD3D /* dinesmart.app */;
 			productType = "com.apple.product-type.application";
@@ -329,7 +306,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 670881C222A76E0B0012DD3D /* Build configuration list for PBXNativeTarget "dinesmartTests" */;
 			buildPhases = (
-				5E9FEB5E23FF010A88C72E43 /* [CP] Check Pods Manifest.lock */,
 				670881A722A76E0B0012DD3D /* Sources */,
 				670881A822A76E0B0012DD3D /* Frameworks */,
 				670881A922A76E0B0012DD3D /* Resources */,
@@ -348,7 +324,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 670881C522A76E0B0012DD3D /* Build configuration list for PBXNativeTarget "dinesmartUITests" */;
 			buildPhases = (
-				552058D90C5F254FC7EA3570 /* [CP] Check Pods Manifest.lock */,
 				670881B222A76E0B0012DD3D /* Sources */,
 				670881B322A76E0B0012DD3D /* Frameworks */,
 				670881B422A76E0B0012DD3D /* Resources */,
@@ -395,6 +370,10 @@
 				Base,
 			);
 			mainGroup = 6708818B22A76E0A0012DD3D;
+			packageReferences = (
+				4A0D01B3273022C90003B030 /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+				4A0D01B6273022FC0003B030 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 6708819522A76E0A0012DD3D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -432,92 +411,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		413CE9B7F742C2D1833EAB1B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-dinesmart-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		552058D90C5F254FC7EA3570 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-dinesmartUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E9FEB5E23FF010A88C72E43 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-dinesmartTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FFD832817F528C777871AC97 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-dinesmart/Pods-dinesmart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-dinesmart/Pods-dinesmart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dinesmart/Pods-dinesmart-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6708819022A76E0A0012DD3D /* Sources */ = {
@@ -714,7 +607,6 @@
 		};
 		670881C022A76E0B0012DD3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D106778D768E8927F089774 /* Pods-dinesmart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -737,7 +629,6 @@
 		};
 		670881C122A76E0B0012DD3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5407A6C78CE64A591CCABB8A /* Pods-dinesmart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -759,7 +650,6 @@
 		};
 		670881C322A76E0B0012DD3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70B94CE0F6D72E31F7888CC1 /* Pods-dinesmartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -781,7 +671,6 @@
 		};
 		670881C422A76E0B0012DD3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22BCB3FABD6DC5189BEE8301 /* Pods-dinesmartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -803,7 +692,6 @@
 		};
 		670881C622A76E0B0012DD3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFA12BD0242D80FCC5CFF484 /* Pods-dinesmartUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -824,7 +712,6 @@
 		};
 		670881C722A76E0B0012DD3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83660EE99125FA917B3C5613 /* Pods-dinesmartUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -883,6 +770,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A0D01B3273022C90003B030 /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		4A0D01B6273022FC0003B030 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A0D01B4273022C90003B030 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A0D01B3273022C90003B030 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+		4A0D01B7273022FC0003B030 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A0D01B6273022FC0003B030 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		4A0D01B9273022FC0003B030 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A0D01B6273022FC0003B030 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6708818C22A76E0A0012DD3D /* Project object */;
 }

@@ -1,11 +1,3 @@
-//
-//  MKMapView+Center.swift
-//  dinesmart
-//
-//  Created by Mohammed Al-Dahleh on 2019-06-15.
-//  Copyright © 2019 Codeovo Software Ltd. All rights reserved.
-//
-
 import MapKit
 
 extension MKMapView {
