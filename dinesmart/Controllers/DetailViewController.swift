@@ -1,10 +1,8 @@
-import GoogleMobileAds
 import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var inspectionsTable: UITableView!
-    @IBOutlet weak var adView: GADBannerView!
     
     var inspectedLocations = [InspectedLocation]()
     var filteredLocations = [InspectedLocation]()
@@ -23,11 +21,6 @@ class DetailViewController: UIViewController {
         searchBar.delegate = self
         
         filteredLocations = inspectedLocations
-        
-        adView.rootViewController = self
-        adView.adSize = kGADAdSizeBanner
-        adView.adUnitID = "ca-app-pub-8516405525746627/9140906583"
-        adView.load(GADRequest())
     }
     
     @IBAction func dismissControllerTapped(_ sender: Any) {
