@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0D01B5273022C90003B030 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 4A0D01B4273022C90003B030 /* Sentry */; };
+		4A0D01B8273022FC0003B030 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4A0D01B7273022FC0003B030 /* Realm */; };
+		4A0D01BA273022FC0003B030 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4A0D01B9273022FC0003B030 /* RealmSwift */; };
 		6708819822A76E0A0012DD3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708819722A76E0A0012DD3D /* AppDelegate.swift */; };
 		6708819A22A76E0A0012DD3D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708819922A76E0A0012DD3D /* MapViewController.swift */; };
 		6708819D22A76E0A0012DD3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6708819B22A76E0A0012DD3D /* Main.storyboard */; };
@@ -87,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0D01BA273022FC0003B030 /* RealmSwift in Frameworks */,
+				4A0D01B8273022FC0003B030 /* Realm in Frameworks */,
+				4A0D01B5273022C90003B030 /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,13 +113,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		58E259E1C7EC4770CC971F9A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		6708818B22A76E0A0012DD3D = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +120,6 @@
 				670881AE22A76E0B0012DD3D /* dinesmartTests */,
 				670881B922A76E0B0012DD3D /* dinesmartUITests */,
 				6708819522A76E0A0012DD3D /* Products */,
-				58E259E1C7EC4770CC971F9A /* Pods */,
 				F16704A693942AD7E2680057 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -295,6 +293,11 @@
 			dependencies = (
 			);
 			name = dinesmart;
+			packageProductDependencies = (
+				4A0D01B4273022C90003B030 /* Sentry */,
+				4A0D01B7273022FC0003B030 /* Realm */,
+				4A0D01B9273022FC0003B030 /* RealmSwift */,
+			);
 			productName = dinesmart;
 			productReference = 6708819422A76E0A0012DD3D /* dinesmart.app */;
 			productType = "com.apple.product-type.application";
@@ -367,6 +370,10 @@
 				Base,
 			);
 			mainGroup = 6708818B22A76E0A0012DD3D;
+			packageReferences = (
+				4A0D01B3273022C90003B030 /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+				4A0D01B6273022FC0003B030 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 6708819522A76E0A0012DD3D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -763,6 +770,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A0D01B3273022C90003B030 /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		4A0D01B6273022FC0003B030 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A0D01B4273022C90003B030 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A0D01B3273022C90003B030 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+		4A0D01B7273022FC0003B030 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A0D01B6273022FC0003B030 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		4A0D01B9273022FC0003B030 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A0D01B6273022FC0003B030 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6708818C22A76E0A0012DD3D /* Project object */;
 }
