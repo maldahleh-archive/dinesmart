@@ -100,20 +100,7 @@ class MapViewController: UIViewController {
 }
 
 // MARK: - Networking
-extension MapViewController {
-    typealias InspectionsCompletionHandler = ([InspectedLocation]?) -> Void
-    
-    private func retrieveInspections(_ completion: @escaping InspectionsCompletionHandler) {
-        apiClient.inspections { result in
-            switch result {
-            case .success(let inspections):
-                completion(inspections)
-            case .failure:
-                completion(nil)
-            }
-        }
-    }
-    
+extension MapViewController {    
     private func loadInspections() {
         guard let realm = realm else {
             downloadInspections()
@@ -130,7 +117,7 @@ extension MapViewController {
     }
     
     private func downloadInspections() {
-        retrieveInspections { [weak self] inspections in
+        apiClient.inspections { [weak self] inspections in
             guard let self = self else {
                 return
             }
