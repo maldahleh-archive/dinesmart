@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="inb-nc-ufL" userLabel="LogoView">
-                                <rect key="frame" x="132" y="44" width="150" height="150"/>
+                                <rect key="frame" x="132" y="48" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="gdT-ff-50u"/>
                                     <constraint firstAttribute="width" constant="150" id="inZ-eq-Eso"/>
@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wo-nX-npN" userLabel="SearchButton">
-                                <rect key="frame" x="20" y="94" width="40" height="40"/>
+                                <rect key="frame" x="20" y="98" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="cc6-qP-RTv"/>
                                     <constraint firstAttribute="height" constant="40" id="xBi-bm-F15"/>
@@ -60,7 +60,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YY6-8g-Dxs" userLabel="RefreshButton">
-                                <rect key="frame" x="354" y="94" width="40" height="40"/>
+                                <rect key="frame" x="354" y="98" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Hkn-oe-ASS"/>
                                     <constraint firstAttribute="width" constant="40" id="al7-2s-uIE"/>
@@ -110,11 +110,11 @@
             <objects>
                 <viewController id="UgO-QT-xbC" customClass="DetailViewController" customModule="dinesmart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nvV-bN-7kL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="jJa-1x-GaD" userLabel="MainStack">
-                                <rect key="frame" x="20" y="0.0" width="374" height="808"/>
+                                <rect key="frame" x="20" y="0.0" width="374" height="886"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lf-Py-3ew" userLabel="BackButton">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="42"/>
@@ -131,7 +131,7 @@
                                         </connections>
                                     </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="atr-Na-jf8">
-                                        <rect key="frame" x="0.0" y="44" width="374" height="764"/>
+                                        <rect key="frame" x="0.0" y="44" width="374" height="842"/>
                                         <color key="backgroundColor" name="BackgroundColor"/>
                                         <color key="tintColor" name="TextColor"/>
                                         <color key="separatorColor" name="TextColor"/>
@@ -147,10 +147,10 @@
                                         </searchBar>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InspectionCell" textLabel="OhP-dW-fCc" detailTextLabel="s3Z-X6-uA7" style="IBUITableViewCellStyleSubtitle" id="JON-7s-yeS">
-                                                <rect key="frame" x="0.0" y="88.5" width="374" height="55.5"/>
+                                                <rect key="frame" x="0.0" y="94" width="374" height="55.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JON-7s-yeS" id="J4Q-LH-toE">
-                                                    <rect key="frame" x="0.0" y="0.0" width="344.5" height="55.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="343.5" height="55.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OhP-dW-fCc">
@@ -201,11 +201,11 @@
             <objects>
                 <viewController id="eEN-z8-PkO" customClass="InspectionViewController" customModule="dinesmart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WsW-sv-58R">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="awR-do-3SB" userLabel="DataStack">
-                                <rect key="frame" x="20" y="0.0" width="374" height="808"/>
+                                <rect key="frame" x="20" y="0.0" width="374" height="886"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBZ-4B-kOr" userLabel="BackButton">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
@@ -255,12 +255,12 @@
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wOC-YB-Z2T" userLabel="InspectionTable">
-                                        <rect key="frame" x="0.0" y="139" width="374" height="630"/>
+                                        <rect key="frame" x="0.0" y="139" width="374" height="708"/>
                                         <color key="backgroundColor" name="BackgroundColor"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InfractionCell" textLabel="mVw-DP-Qa8" detailTextLabel="cpl-3U-vIH" style="IBUITableViewCellStyleSubtitle" id="HYx-vi-vRK">
-                                                <rect key="frame" x="0.0" y="49.5" width="374" height="55.5"/>
+                                                <rect key="frame" x="0.0" y="55.5" width="374" height="55.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HYx-vi-vRK" id="zBU-Sc-beA">
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="55.5"/>
@@ -288,7 +288,7 @@
                                         <sections/>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data is retrieved from the regional public health agency" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjr-5Y-7Jd" userLabel="SourceLabel">
-                                        <rect key="frame" x="0.0" y="772" width="374" height="36"/>
+                                        <rect key="frame" x="0.0" y="850" width="374" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="41" id="do9-w7-k2Z"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="kIE-AS-0wO"/>
@@ -322,11 +322,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qh2-Fi-PFq"/>
+        <segue reference="pDU-KL-gjc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LocationIcon" width="20" height="20"/>
-        <image name="Logo" width="2037" height="1377"/>
+        <image name="Logo" width="250" height="40"/>
         <image name="RefreshIcon" width="40" height="40"/>
         <image name="SearchIcon" width="30" height="30"/>
         <namedColor name="BackgroundColor">

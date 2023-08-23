@@ -572,12 +572,14 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = BK6SYNX968;
 				INFOPLIST_FILE = dinesmart/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DineSmart;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codeovo.dine-smart";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maldahleh.dinesmart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -593,12 +595,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BK6SYNX968;
 				INFOPLIST_FILE = dinesmart/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DineSmart;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codeovo.dine-smart";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maldahleh.dinesmart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
