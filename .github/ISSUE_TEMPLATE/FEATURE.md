@@ -12,5 +12,4 @@ Please describe the feature/change you are suggesting.
 
 ## Context
 
-If the change is not straightforward, please provide context around why you are suggesting this
-change.
+If the change is not straightforward, please provide context around why you are suggesting this change.

@@ -37,6 +37,6 @@ Please include any relevant log entries or files.
 
 ## Checklist
 
-- [ ] I am running the latest version
-- [ ] I checked the documentation
-- [ ] I checked to make sure that this issue has not already been filed
+* [ ] I am running the latest version
+* [ ] I checked the documentation
+* [ ] I checked to make sure that this issue has not already been filed
